@@ -1,0 +1,93 @@
+{
+  "personal": [
+      {
+          "challenge": "0-4",
+          "values": [
+              {
+                  "check": "1-30",
+                  "value": "5d6:pc"
+              },
+              {
+                  "check": "31-60",
+                  "value": "4d6:pp"
+              },
+              {
+                  "check": "61-70",
+                  "value": "3d6:pe"
+              },
+              {
+                  "check": "71-95",
+                  "value": "3d6:po"
+              },
+              {
+                  "check": "96-100",
+                  "value": "1d6:ppt"
+              }
+          ]
+      },
+      {
+          "challenge": "5-10",
+          "values": [
+              {
+                  "check": "1-30",
+                  "value": "4d6x100:pc;1d6x10:pe"
+              },
+              {
+                  "check": "31-60",
+                  "value": "6d6x10:pp;2d6x10:po"
+              },
+              {
+                  "check": "61-70",
+                  "value": "3d6x10:pe;2d6x10:po"
+              },
+              {
+                  "check": "71-95",
+                  "value": "4d6x10:po"
+              },
+              {
+                  "check": "96-100",
+                  "value": "2d6x10:po;3d6:ppt"
+              }
+          ]
+      },
+      {
+          "challenge": "11-16",
+          "values": [
+              {
+                  "check": "1-20",
+                  "value": "4d6x100:pp;1d6x100:po"
+              },
+              {
+                  "check": "21-35",
+                  "value": "1d6x100:pe;1d6x100:po"
+              },
+              {
+                  "check": "36-75",
+                  "value": "2d6x100:po;1d6x10:ppt"
+              },
+              {
+                  "check": "76-100",
+                  "value": "2d6x100:po;2d6x10:ppt"
+              }
+          ]
+      },
+      {
+          "challenge": "17+",
+          "values": [
+              {
+                  "check": "1-15",
+                  "value": "2d6x1000:pe;8d6x100:po"
+              },
+              {
+                  "check": "16-55",
+                  "value": "1d6x1000:po;1d6x100:ppt"
+              },
+              {
+                  "check": "56-100",
+                  "value": "1d6x1000:po;2d6x100:ppt"
+              }
+          ]
+      }
+  ]
+}
+
