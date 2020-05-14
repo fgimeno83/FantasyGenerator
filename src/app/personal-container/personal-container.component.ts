@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CheckService } from '../services/check.service';
 
 @Component({
   selector: 'app-personal-container',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PersonalContainerComponent implements OnInit {
 
-  constructor() { }
+  private checkService: CheckService;
+
+  constructor(checkService: CheckService) {
+    this.checkService = checkService;
+    // checkService.checkPersonalTreasure(1, 's');
+  }
 
   ngOnInit(): void {
   }
