@@ -25,10 +25,10 @@ export class CheckService {
 
   public checkPersonalTreasure(numberOfChecks: number, challenge: string) {
     const personalChallengeSelected = this.personalTreasure.personal.find(personal => this.isChallengeSelected(personal, challenge));
-    const valueSelected = personalChallengeSelected.values.find(value =>
-      this.isNumberInRange(this.randomCheck(this.MIN_CHECK_VALUE, this.MAX_CHECK_VALUE), value.check));
+    const randomCheckResult = this.randomCheck(this.MIN_CHECK_VALUE, this.MAX_CHECK_VALUE);
+    const valueSelected = personalChallengeSelected.values.find(value => this.isNumberInRange(randomCheckResult, value.check));
 
-    this.conversorService.convert(valueSelected.value);
+    // this.conversorService.convert(valueSelected.value);
 
     console.log(personalChallengeSelected.values.length);
   }

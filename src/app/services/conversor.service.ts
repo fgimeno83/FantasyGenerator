@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { CONVERSION_CONSTANTS } from '../model/conversor-constants';
+import { CoinType } from '../model/coin-enum.model';
 
 @Injectable({
   providedIn: 'root'
@@ -21,15 +22,30 @@ export class ConversorService {
   }
 
   public convertFromString(source: string) {
-//4d6x100:pc;1d6x10:pe
-    let values: string[];
-    values = source.split(this.VALUE_SEPARATOR);
+    // 4d6x100:pc;1d6x10:pe
+    const values = source.split(this.VALUE_SEPARATOR);
 
-    // if (source.includes(this.VALUE_SEPARATOR)){
-    // } else {
-    //   values = source.;
-    // }
+    values.map(value => value.split(this.COIN_TYPE_SEPARATOR));
+
+    values.forEach(value => {
+      const valueType = value.split(this.COIN_TYPE_SEPARATOR);
+      let coinValue = valueType[0];
+      let multiplier: string;
+      if (coinValue.includes(this.MULTIPLIER_SEPARATOR)) {
+        const coinValueArray = coinValue.split(this.MULTIPLIER_SEPARATOR);
+        coinValue = coinValueArray[0];
+        multiplier = coinValueArray[1];
+      }
+
+      // TODO
+      // check dices
+      // multiply
+      // convert
+
+    });
   }
+
+
 
   private convertCopper(cuantity: number, target: CoinType) {
 

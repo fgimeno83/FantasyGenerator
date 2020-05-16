@@ -1,0 +1,9 @@
+<h4>Nivel</h4>
+<mat-form-field>
+  <mat-label>Selecciona uno</mat-label>
+  <mat-select>
+    <mat-option *ngFor="let level of levels" [value]="level.name">
+      {{level.name}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
