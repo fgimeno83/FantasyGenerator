@@ -9,6 +9,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatListModule } from '@angular/material/list';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
+import { MatInputModule } from '@angular/material/input';
 import { LevelComponent } from './compound/level/level.component';
 import { NumberInputComponent } from './compound/number-input/number-input.component';
 import { TreasureComponent } from './treasure/treasure.component';
@@ -37,6 +38,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
     MatListModule,
     MatFormFieldModule,
     MatSelectModule,
+    MatInputModule,
     FormsModule,
     ReactiveFormsModule,
   ],

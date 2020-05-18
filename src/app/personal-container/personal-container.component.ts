@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CheckService } from '../services/check.service';
+import {FormBuilder, FormControl, FormGroup} from '@angular/forms';
 
 @Component({
   selector: 'app-personal-container',
@@ -9,8 +10,11 @@ import { CheckService } from '../services/check.service';
 export class PersonalContainerComponent implements OnInit {
 
   private checkService: CheckService;
+  options: FormGroup;
 
-  constructor(checkService: CheckService) {
+  constructor(checkService: CheckService, fb: FormBuilder) {
+    this.options = fb.group({
+    });
     this.checkService = checkService;
     // checkService.checkPersonalTreasure(1, 's');
   }
