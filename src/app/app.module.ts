@@ -39,8 +39,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
     MatFormFieldModule,
     MatSelectModule,
     MatInputModule,
-    FormsModule,
-    ReactiveFormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
