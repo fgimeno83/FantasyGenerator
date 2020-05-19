@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { FormGroup, ControlContainer } from '@angular/forms';
 
 @Component({
   selector: 'app-number-input',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./number-input.component.css']
 })
 export class NumberInputComponent implements OnInit {
+
+  @Input() public parentForm: FormGroup;
 
   constructor() { }
 

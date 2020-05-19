@@ -1,8 +1,7 @@
 <div class="example-container">
   <form [formGroup]="options">
-    <app-compound></app-compound>
-    <!-- <app-compound [numberElementIn]="numberElementsControl"></app-compound> -->
-    <button mat-raised-button>Calcular</button>
+    <app-compound [parentForm]="options"></app-compound>
+    <button mat-raised-button (click)="send()" (disabled)="options.invalid">Calcular</button>
   </form>
   <app-result-presenter></app-result-presenter>
 </div>

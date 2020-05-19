@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CheckService } from '../services/check.service';
-import {FormBuilder, FormGroup} from '@angular/forms';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-personal-container',
@@ -21,7 +21,15 @@ export class PersonalContainerComponent implements OnInit {
 
   ngOnInit(): void {
     this.options = this.formBuilder.group({
+      levelSel: ['', Validators.required],
+      numberSel: ['', Validators.required]
     });
+  }
+
+  public send() {
+    console.log(this.options.value);
+    console.log(this.options.status);
+    console.log(this.options.invalid);
   }
 
 }

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-level',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./level.component.css']
 })
 export class LevelComponent implements OnInit {
+
+  @Input() public parentForm: FormGroup;
 
   public levels = [
     {name: '1'},
