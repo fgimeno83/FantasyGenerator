@@ -13,32 +13,55 @@ export class CheckService {
   private RANGE_SEPARATOR: string;
   private MIN_CHECK_VALUE: number;
   private MAX_CHECK_VALUE: number;
-  private conversorService: ConversorService;
+  private DICE_SEPARATOR: string;
+  // private conversorService: ConversorService;
 
-  constructor(conversorService: ConversorService) {
+  constructor(/*conversorService: ConversorService*/) {
     this.personalTreasure = personalTreasureJson;
     this.RANGE_SEPARATOR = '-';
     this.MAX_CHECK_VALUE = 100;
     this.MIN_CHECK_VALUE = 1;
-    this.conversorService = conversorService;
+    this.DICE_SEPARATOR = 'd';
+    // this.conversorService = conversorService;
   }
 
   public checkPersonalTreasure(numberOfChecks: number, challenge: string) {
-    const personalChallengeSelected = this.personalTreasure.personal.find(personal => this.isChallengeSelected(personal, challenge));
+  //   console.log('in');
+  //   console.log(this.personalTreasure);
+    const personalChallengeSelected = this.personalTreasure.personal.find(personal =>
+      this.isNumberInRange(parseInt(challenge, 10), personal.challenge));
+    // console.log(personalChallengeSelected);
     const randomCheckResult = this.randomCheck(this.MIN_CHECK_VALUE, this.MAX_CHECK_VALUE);
-    const valueSelected = personalChallengeSelected.values.find(value => this.isNumberInRange(randomCheckResult, value.check));
+    // console.log(randomCheckResult);
+    return personalChallengeSelected.values.find(value => this.isNumberInRange(randomCheckResult, value.check));
+    // console.log(valueSelected);
 
-    // this.conversorService.convert(valueSelected.value);
-
-    console.log(personalChallengeSelected.values.length);
+    // console.log(this.conversorService.convertFromString(valueSelected.value));
+    // console.log('out');
   }
 
-  private isChallengeSelected(personal: Personal, challenge: string) {
-    return personal.challenge === challenge;
-  }
+  // private isChallengeSelected(personal: Personal, challenge: string) {
+  //   console.log(personal.challenge + ' - ' + challenge);
+  //   // return personal.challenge === challenge;
+  //   const result = this.isNumberInRange(parseInt(challenge, 10), personal.challenge);
+  //   console.log(result);
+  //   return result;
+  // }
 
   private randomCheck(min: number, max: number) {
     return Math.floor(Math.random() * (max - min + 1) + min);
+  }
+
+  public randomCheckFromString(check: string) {
+    // 4d6
+    let total: number;
+    const checkArray = check.split(this.DICE_SEPARATOR);
+    const numberOfChecks = checkArray[0];
+    const dice = checkArray[1];
+    for (let index = 0; index < parseInt(numberOfChecks, 10); index++) {
+      total += this.randomCheck(1, parseInt(dice, 10));
+    }
+    return total;
   }
 
   private isNumberInRange(check: number, stringRange: string) {

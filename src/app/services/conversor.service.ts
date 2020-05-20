@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { CONVERSION_CONSTANTS } from '../model/conversor-constants';
 import { CoinType } from '../model/coin-enum.model';
+import { CheckService } from './check.service';
 
 @Injectable({
   providedIn: 'root'
@@ -10,11 +11,13 @@ export class ConversorService {
   private VALUE_SEPARATOR: string;
   private COIN_TYPE_SEPARATOR: string;
   private MULTIPLIER_SEPARATOR: string;
+  private checkService: CheckService;
 
-  constructor() {
+  constructor(checkService: CheckService) {
     this.VALUE_SEPARATOR = ';';
     this.COIN_TYPE_SEPARATOR = ':';
     this.MULTIPLIER_SEPARATOR = 'x';
+    this.checkService = checkService;
    }
 
   public convert(cuantity: number, source: CoinType, target: CoinType) {
@@ -41,8 +44,10 @@ export class ConversorService {
       // check dices
       // multiply
       // convert
-
+      const checkTotal = this.checkService.randomCheckFromString(coinValue) * parseInt(multiplier, 10);
     });
+
+    return values;
   }
 
 

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CheckService } from '../services/check.service';
+import { GeneratorService } from '../services/generator.service';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 
 @Component({
@@ -9,14 +9,13 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 })
 export class PersonalContainerComponent implements OnInit {
 
-  private checkService: CheckService;
+  private generatorService: GeneratorService;
   private formBuilder: FormBuilder;
   public options: FormGroup;
 
-  constructor(checkService: CheckService, formBuilder: FormBuilder) {
+  constructor(generatorService: GeneratorService, formBuilder: FormBuilder) {
     this.formBuilder = formBuilder;
-    this.checkService = checkService;
-    // checkService.checkPersonalTreasure(1, 's');
+    this.generatorService = generatorService;
   }
 
   ngOnInit(): void {
@@ -27,9 +26,10 @@ export class PersonalContainerComponent implements OnInit {
   }
 
   public send() {
-    console.log(this.options.value);
-    console.log(this.options.status);
-    console.log(this.options.invalid);
+    // console.log(this.options.value);
+    // console.log(this.options.status);
+    // console.log(this.options.invalid);
+    this.generatorService.generatePersonalTreasure(this.options.value.numberSel, this.options.value.levelSel);
   }
 
 }
