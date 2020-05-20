@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ComponentFactoryResolver, ViewChild, ViewContainerRef } from '@angular/core';
 import { GeneratorService } from '../services/generator.service';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import { CompoundComponent } from '../compound/compound.component';
 
 @Component({
   selector: 'app-personal-container',
@@ -9,11 +10,16 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 })
 export class PersonalContainerComponent implements OnInit {
 
+  @ViewChild('container', {read: ViewContainerRef}) container: ViewContainerRef;
+
   private generatorService: GeneratorService;
   private formBuilder: FormBuilder;
   public options: FormGroup;
+  public goldResult: number;
 
-  constructor(generatorService: GeneratorService, formBuilder: FormBuilder) {
+  public components = [];
+
+  constructor(generatorService: GeneratorService, formBuilder: FormBuilder, private componentFactoryResolver: ComponentFactoryResolver) {
     this.formBuilder = formBuilder;
     this.generatorService = generatorService;
   }
@@ -26,10 +32,28 @@ export class PersonalContainerComponent implements OnInit {
   }
 
   public send() {
-    // console.log(this.options.value);
-    // console.log(this.options.status);
-    // console.log(this.options.invalid);
-    this.generatorService.generatePersonalTreasure(this.options.value.numberSel, this.options.value.levelSel);
+    this.goldResult = this.generatorService.generatePersonalTreasure(this.options.value.numberSel, this.options.value.levelSel);
+  }
+
+  public addComponent() {
+
+    const componentFactory = this.componentFactoryResolver.resolveComponentFactory(CompoundComponent);
+
+    const componentRef = this.container.createComponent(componentFactory);
+    (componentRef.instance as CompoundComponent).parentForm = this.options;
+    this.components.push(componentRef);
+  }
+
+  public removeComponent(index: number) {
+    console.log(index);
+    const component = this.components.find((component) => component.instance instanceof CompoundComponent);
+    const componentIndex = this.components.indexOf(component);
+
+    if (componentIndex !== -1) {
+      // Remove component from both view and array
+      this.container.remove(this.container.indexOf(component));
+      this.components.splice(componentIndex, 1);
+    }
   }
 
 }

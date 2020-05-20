@@ -26,18 +26,13 @@ export class CheckService {
   }
 
   public checkPersonalTreasure(numberOfChecks: number, challenge: string) {
-  //   console.log('in');
-  //   console.log(this.personalTreasure);
-    const personalChallengeSelected = this.personalTreasure.personal.find(personal =>
-      this.isNumberInRange(parseInt(challenge, 10), personal.challenge));
-    // console.log(personalChallengeSelected);
-    const randomCheckResult = this.randomCheck(this.MIN_CHECK_VALUE, this.MAX_CHECK_VALUE);
-    // console.log(randomCheckResult);
-    return personalChallengeSelected.values.find(value => this.isNumberInRange(randomCheckResult, value.check));
-    // console.log(valueSelected);
 
-    // console.log(this.conversorService.convertFromString(valueSelected.value));
-    // console.log('out');
+    const personalChallengeSelected = this.personalTreasure.personal.find(personal =>
+    // this.isNumberInRange(parseInt(challenge, 10), personal.challenge));
+    challenge === personal.challenge);
+    const randomCheckResult = this.randomCheck(this.MIN_CHECK_VALUE, this.MAX_CHECK_VALUE);
+    return personalChallengeSelected.values.find(value => this.isNumberInRange(randomCheckResult, value.check));
+
   }
 
   // private isChallengeSelected(personal: Personal, challenge: string) {
@@ -54,13 +49,14 @@ export class CheckService {
 
   public randomCheckFromString(check: string) {
     // 4d6
-    let total: number;
+    let total = 0;
     const checkArray = check.split(this.DICE_SEPARATOR);
     const numberOfChecks = checkArray[0];
     const dice = checkArray[1];
     for (let index = 0; index < parseInt(numberOfChecks, 10); index++) {
       total += this.randomCheck(1, parseInt(dice, 10));
     }
+
     return total;
   }
 

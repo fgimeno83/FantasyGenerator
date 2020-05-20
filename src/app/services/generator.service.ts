@@ -18,11 +18,7 @@ export class GeneratorService {
 
   public generatePersonalTreasure(numberOfChecks: number, challenge: string) {
     const personalValues = this.checkService.checkPersonalTreasure(numberOfChecks, challenge);
-    const stringValues = this.conversorService.convertFromString(personalValues.value);
-    console.log(stringValues);
-    // let result: number;
 
-    // stringValues.forEach(stringValue => this.checkService.)
-    // this.checkService
+    return this.conversorService.convertFromString(personalValues.value);
   }
 }

@@ -2,6 +2,6 @@
 <app-level [parentForm]="parentForm"></app-level>
 
 <div class="example-button-row">
-  <button mat-raised-button>Añadir</button>
-  <button mat-raised-button color="primary">Quitar</button>
+  <!-- <button mat-raised-button (click)="addComponent()">Añadir</button> -->
+  <button mat-raised-button color="primary" (click)="indexComp.emit(componentIndex)">Quitar</button>
 </div>
