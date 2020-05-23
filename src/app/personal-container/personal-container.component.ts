@@ -1,7 +1,8 @@
-import { Component, OnInit, ComponentFactoryResolver, ViewChild, ViewContainerRef } from '@angular/core';
+import { Component, OnInit, ComponentFactoryResolver, ViewChild, ViewContainerRef, EventEmitter, HostListener } from '@angular/core';
 import { GeneratorService } from '../services/generator.service';
-import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {FormBuilder, FormGroup, Validators, FormArray} from '@angular/forms';
 import { CompoundComponent } from '../compound/compound.component';
+import { TreasureFormModel } from '../model/treasure-form.model';
 
 @Component({
   selector: 'app-personal-container',
@@ -14,7 +15,7 @@ export class PersonalContainerComponent implements OnInit {
 
   private generatorService: GeneratorService;
   private formBuilder: FormBuilder;
-  public options: FormGroup;
+  public options: FormArray;
   public goldResult: number;
 
   public components = [];
@@ -25,14 +26,18 @@ export class PersonalContainerComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.options = this.formBuilder.group({
-      levelSel: ['', Validators.required],
-      numberSel: ['', Validators.required]
-    });
+    this.options = new FormArray([
+      this.formBuilder.group({
+        levelSel: ['', Validators.required],
+        numberSel: ['', Validators.required]
+      })
+    ]);
   }
 
   public send() {
-    this.goldResult = this.generatorService.generatePersonalTreasure(this.options.value.numberSel, this.options.value.levelSel);
+    const treasureForm: TreasureFormModel[] = this.options.value;
+    this.goldResult = this.generatorService.generatePersonalTreasure(treasureForm);
+    // this.goldResult = this.generatorService.generatePersonalTreasure(this.options.value.numberSel, this.options.value.levelSel);
   }
 
   public addComponent() {
@@ -40,20 +45,23 @@ export class PersonalContainerComponent implements OnInit {
     const componentFactory = this.componentFactoryResolver.resolveComponentFactory(CompoundComponent);
 
     const componentRef = this.container.createComponent(componentFactory);
-    (componentRef.instance as CompoundComponent).parentForm = this.options;
+
+    this.options.push(this.formBuilder.group({
+      levelSel: ['', Validators.required],
+      numberSel: ['', Validators.required]
+    }));
+
+    (componentRef.instance as CompoundComponent).parentForm = this.options.controls[this.components.length + 1] as FormGroup;
+    componentRef.instance.indexComp.subscribe(index => this.removeComponent(index));
     this.components.push(componentRef);
   }
 
-  public removeComponent(index: number) {
-    console.log(index);
-    const component = this.components.find((component) => component.instance instanceof CompoundComponent);
+  public removeComponent(deletedComp: CompoundComponent) {
+    const component = this.components.find(component => component.instance === deletedComp);
     const componentIndex = this.components.indexOf(component);
-
-    if (componentIndex !== -1) {
-      // Remove component from both view and array
-      this.container.remove(this.container.indexOf(component));
-      this.components.splice(componentIndex, 1);
-    }
+    this.container.remove(componentIndex);
+    this.components.splice(componentIndex, 1);
+    this.options.removeAt(componentIndex);
   }
 
 }

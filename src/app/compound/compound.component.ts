@@ -11,18 +11,11 @@ export class CompoundComponent implements OnInit {
   // @ViewChild('container2', {read: ViewContainerRef}) container: ViewContainerRef;
 
   @Input() public parentForm: FormGroup;
-  @Input() public componentIndex: number;
-  @Output() public indexComp = new EventEmitter<number>();
+  @Output() public indexComp = new EventEmitter<CompoundComponent>();
 
   constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
 
   ngOnInit(): void {
   }
-
-  // public addComponent() {
-  //   const componentFactory = this.componentFactoryResolver.resolveComponentFactory(CompoundComponent);
-  //   const componentRef = this.container.createComponent(componentFactory);
-  //   (componentRef.instance as CompoundComponent).parentForm = this.parentForm;
-  // }
 
 }

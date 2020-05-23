@@ -25,7 +25,7 @@ export class CheckService {
     // this.conversorService = conversorService;
   }
 
-  public checkPersonalTreasure(numberOfChecks: number, challenge: string) {
+  public checkPersonalTreasure(challenge: string) {
 
     const personalChallengeSelected = this.personalTreasure.personal.find(personal =>
     // this.isNumberInRange(parseInt(challenge, 10), personal.challenge));

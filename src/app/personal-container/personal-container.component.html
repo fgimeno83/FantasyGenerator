@@ -1,6 +1,6 @@
 <div class="example-container">
   <form [formGroup]="options">
-    <app-compound [parentForm]="options" (indexComp)="removeComponent($event)"></app-compound>
+    <app-compound [parentForm]="options.controls[0]" (indexComp)="removeComponent($event)"></app-compound>
 
 aaa
 <ng-template #container>
