@@ -1,7 +1,5 @@
-<app-number-input [parentForm]="parentForm" ></app-number-input>
-<app-level [parentForm]="parentForm"></app-level>
-
-<div class="example-button-row">
-  <!-- <button mat-raised-button (click)="addComponent()">Añadir</button> -->
+<div class="compound-component-container">
+  <app-number-input [parentForm]="parentForm" ></app-number-input>
+  <app-level [parentForm]="parentForm"></app-level>
   <button mat-raised-button color="primary" (click)="indexComp.emit(this)">Quitar</button>
 </div>

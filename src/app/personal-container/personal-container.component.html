@@ -1,14 +1,14 @@
-<div class="example-container">
+<div class="form-container">
   <form [formGroup]="options">
     <app-compound [parentForm]="options.controls[0]" (indexComp)="removeComponent($event)"></app-compound>
 
-aaa
-<ng-template #container>
+    <ng-template #container>
+    </ng-template>
 
-</ng-template>
-bb
-    <button mat-raised-button (click)="addComponent()">Añadir</button>
-    <button mat-raised-button (click)="send()" (disabled)="options.invalid">Calcular</button>
+    <div class="button-container">
+      <button mat-raised-button (click)="addComponent()">Añadir</button>
+      <button mat-raised-button (click)="send()" (disabled)="options.invalid">Calcular</button>
+    </div>
   </form>
   <app-result-presenter [goldResult]="goldResult"></app-result-presenter>
 </div>

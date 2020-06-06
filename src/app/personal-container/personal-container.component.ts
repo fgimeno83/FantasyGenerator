@@ -29,7 +29,7 @@ export class PersonalContainerComponent implements OnInit {
     this.options = new FormArray([
       this.formBuilder.group({
         levelSel: ['', Validators.required],
-        numberSel: ['', Validators.required]
+        numberSel: ['', [Validators.required, Validators.email]]
       })
     ]);
   }
@@ -48,7 +48,10 @@ export class PersonalContainerComponent implements OnInit {
 
     this.options.push(this.formBuilder.group({
       levelSel: ['', Validators.required],
-      numberSel: ['', Validators.required]
+      numberSel: ['', [
+        Validators.required,
+        Validators.email
+      ]]
     }));
 
     (componentRef.instance as CompoundComponent).parentForm = this.options.controls[this.components.length + 1] as FormGroup;

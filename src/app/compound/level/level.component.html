@@ -1,5 +1,4 @@
-<h4>Nivel</h4>
-<mat-form-field [formGroup]="parentForm">
+<mat-form-field [formGroup]="parentForm" appearance="fill">
   <mat-label>Selecciona uno</mat-label>
   <mat-select formControlName="levelSel">
     <mat-option *ngFor="let level of levels" [value]="level.name">
