@@ -1,5 +1,8 @@
 <div class="compound-component-container">
   <app-number-input [parentForm]="parentForm" ></app-number-input>
   <app-level [parentForm]="parentForm"></app-level>
-  <button mat-raised-button color="primary" (click)="indexComp.emit(this)">Quitar</button>
+  <button mat-mini-fab color="primary" (click)="indexComp.emit(this)"><mat-icon>delete</mat-icon></button>
+  <!-- <button mat-fab color="accent" aria-label="Example icon button with a bookmark icon">
+    <mat-icon>bookmark</mat-icon>
+  </button> -->
 </div>

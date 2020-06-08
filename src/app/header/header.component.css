@@ -1,0 +1,9 @@
+.main {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.section {
+  margin-top: 10%;
+}

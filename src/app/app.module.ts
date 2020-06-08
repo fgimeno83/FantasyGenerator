@@ -10,13 +10,17 @@ import { MatListModule } from '@angular/material/list';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatIconModule } from '@angular/material/icon';
 import { LevelComponent } from './compound/level/level.component';
 import { NumberInputComponent } from './compound/number-input/number-input.component';
 import { TreasureComponent } from './treasure/treasure.component';
 import { PersonalContainerComponent } from './personal-container/personal-container.component';
 import { ResultPresenterComponent } from './result-presenter/result-presenter.component';
 import { CompoundComponent } from './compound/compound.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @NgModule({
@@ -39,6 +43,10 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
     MatFormFieldModule,
     MatSelectModule,
     MatInputModule,
+    MatButtonModule,
+    MatMenuModule,
+    MatButtonToggleModule,
+    MatIconModule,
     ReactiveFormsModule
   ],
   providers: [],
