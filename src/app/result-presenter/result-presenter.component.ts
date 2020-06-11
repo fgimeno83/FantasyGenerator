@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ResultPresenterComponent implements OnInit {
 
   @Input() public goldResult: number;
+  @Input() public itemResult: any[];
 
   constructor() { }
 

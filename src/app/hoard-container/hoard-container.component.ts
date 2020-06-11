@@ -16,7 +16,10 @@ export class HoardContainerComponent implements OnInit {
   private generatorService: GeneratorService;
   private formBuilder: FormBuilder;
   public options: FormArray;
-  public goldResult: number;
+  public result: {
+    totalValue: number;
+    itemList: any[];
+  };
 
   public components = [];
 
@@ -36,7 +39,8 @@ export class HoardContainerComponent implements OnInit {
 
   public send() {
     const treasureForm: TreasureFormModel[] = this.options.value;
-    this.goldResult = this.generatorService.generatePersonalTreasure(treasureForm);
+    this.result = this.generatorService.generateHoardTreasure(treasureForm);
+    console.log(this.result);
   }
 
   public addComponent() {

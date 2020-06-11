@@ -39,23 +39,37 @@ export class GeneratorService {
   }
 
   public generateHoardTreasure(options: TreasureFormModel[]) {
-    let totalValue = 0;
+    const totalValue = 0;
+    const itemList = [];
+    const result = {
+      totalValue,
+      itemList
+    };
+
     options.forEach(value => {
       const p = this.generateEachHoardTreasure(value.numberSel, value.levelSel);
-      console.log(p);
-      totalValue += p;
+      result.totalValue += p.totalValue;
+      result.itemList.concat(p.itemList);
     });
 
-    return totalValue;
+    return result;
   }
 
   private generateEachHoardTreasure(numberOfChecks: number, challenge: string) {
     let totalValue = 0;
+    const itemList = [];
     for (let index = 0; index < numberOfChecks; index++) {
-      const hoardMoney = this.checkService.checkHoardTreasure(challenge);
-      totalValue +=  this.conversorService.convertFromString(hoardMoney);
+      const hoard = this.checkService.getHoard(challenge);
+      const hoardValue = this.checkService.checkHoardTreasure(hoard);
+      totalValue +=  this.conversorService.convertFromString(hoard.money);
+      totalValue +=  this.conversorService.convertFromString(hoardValue.gems);
+      itemList.push(this.checkService.checkMagicItem(hoardValue.objects));
     }
 
-    return totalValue;
+    const result = {
+      totalValue,
+      itemList
+    };
+    return result;
   }
 }
