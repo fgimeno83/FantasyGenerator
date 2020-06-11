@@ -3,6 +3,7 @@ import { PersonalTreasure } from '../model/personal-treasure.model';
 import personalTreasureJson from '../../assets/personalTreasure.json';
 import hoardTreasureJson from '../../assets/hoardTreasure.json';
 import { HoardTreasure } from '../model/hoard-treasure.model';
+import { PersonalTreasureValue } from '../model/personal-treasure/value.model';
 
 @Injectable({
   providedIn: 'root'
@@ -26,7 +27,6 @@ export class CheckService {
   }
 
   public checkPersonalTreasure(challenge: string) {
-
     const personalChallengeSelected = this.personalTreasure.personal.find(personal =>
     challenge === personal.challenge);
     const randomCheckResult = this.randomCheck(this.MIN_CHECK_VALUE, this.MAX_CHECK_VALUE);
@@ -37,8 +37,7 @@ export class CheckService {
   public checkHoardTreasure(challenge: string) {
     const hoardChallengeSelected = this.hoardTreasure.hoard.find(hoard =>
     challenge === hoard.challenge);
-    const randomCheckResult = this.randomCheck(this.MIN_CHECK_VALUE, this.MAX_CHECK_VALUE);
-    return hoardChallengeSelected.money.find(value => this.isNumberInRange(randomCheckResult, value.check));
+    return hoardChallengeSelected.money;
   }
 
   // private isChallengeSelected(personal: Personal, challenge: string) {

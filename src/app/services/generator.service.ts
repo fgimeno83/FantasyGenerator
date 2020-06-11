@@ -37,4 +37,25 @@ export class GeneratorService {
 
     return totalValue;
   }
+
+  public generateHoardTreasure(options: TreasureFormModel[]) {
+    let totalValue = 0;
+    options.forEach(value => {
+      const p = this.generateEachHoardTreasure(value.numberSel, value.levelSel);
+      console.log(p);
+      totalValue += p;
+    });
+
+    return totalValue;
+  }
+
+  private generateEachHoardTreasure(numberOfChecks: number, challenge: string) {
+    let totalValue = 0;
+    for (let index = 0; index < numberOfChecks; index++) {
+      const hoardMoney = this.checkService.checkHoardTreasure(challenge);
+      totalValue +=  this.conversorService.convertFromString(hoardMoney);
+    }
+
+    return totalValue;
+  }
 }
