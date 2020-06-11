@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { PersonalTreasure } from '../model/personal-treasure.model';
-import { Personal } from '../model/personal-treasure/personal.model';
 import personalTreasureJson from '../../assets/personalTreasure.json';
-import { ConversorService } from './conversor.service';
+import hoardTreasureJson from '../../assets/hoardTreasure.json';
+import { HoardTreasure } from '../model/hoard-treasure.model';
 
 @Injectable({
   providedIn: 'root'
@@ -10,29 +10,35 @@ import { ConversorService } from './conversor.service';
 export class CheckService {
 
   private personalTreasure: PersonalTreasure;
+  private hoardTreasure: HoardTreasure;
   private RANGE_SEPARATOR: string;
   private MIN_CHECK_VALUE: number;
   private MAX_CHECK_VALUE: number;
   private DICE_SEPARATOR: string;
-  // private conversorService: ConversorService;
 
-  constructor(/*conversorService: ConversorService*/) {
+  constructor() {
     this.personalTreasure = personalTreasureJson;
+    this.hoardTreasure = hoardTreasureJson;
     this.RANGE_SEPARATOR = '-';
     this.MAX_CHECK_VALUE = 100;
     this.MIN_CHECK_VALUE = 1;
     this.DICE_SEPARATOR = 'd';
-    // this.conversorService = conversorService;
   }
 
   public checkPersonalTreasure(challenge: string) {
 
     const personalChallengeSelected = this.personalTreasure.personal.find(personal =>
-    // this.isNumberInRange(parseInt(challenge, 10), personal.challenge));
     challenge === personal.challenge);
     const randomCheckResult = this.randomCheck(this.MIN_CHECK_VALUE, this.MAX_CHECK_VALUE);
     return personalChallengeSelected.values.find(value => this.isNumberInRange(randomCheckResult, value.check));
 
+  }
+
+  public checkHoardTreasure(challenge: string) {
+    const hoardChallengeSelected = this.hoardTreasure.hoard.find(hoard =>
+    challenge === hoard.challenge);
+    const randomCheckResult = this.randomCheck(this.MIN_CHECK_VALUE, this.MAX_CHECK_VALUE);
+    return hoardChallengeSelected.money.find(value => this.isNumberInRange(randomCheckResult, value.check));
   }
 
   // private isChallengeSelected(personal: Personal, challenge: string) {

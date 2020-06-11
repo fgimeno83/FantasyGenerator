@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ConversorService } from './conversor.service';
 import { CheckService } from './check.service';
-import { FormArray } from '@angular/forms';
 import { TreasureFormModel } from '../model/treasure-form.model';
 
 @Injectable({

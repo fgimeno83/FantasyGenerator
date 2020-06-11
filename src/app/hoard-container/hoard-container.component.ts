@@ -1,15 +1,15 @@
 import { Component, OnInit, ComponentFactoryResolver, ViewChild, ViewContainerRef } from '@angular/core';
 import { GeneratorService } from '../services/generator.service';
-import {FormBuilder, FormGroup, Validators, FormArray} from '@angular/forms';
-import { CompoundComponent } from '../compound/compound.component';
+import { FormBuilder, FormArray, Validators, FormGroup } from '@angular/forms';
 import { TreasureFormModel } from '../model/treasure-form.model';
+import { CompoundComponent } from '../compound/compound.component';
 
 @Component({
-  selector: 'app-personal-container',
-  templateUrl: './personal-container.component.html',
-  styleUrls: ['./personal-container.component.css']
+  selector: 'app-hoard-container',
+  templateUrl: './hoard-container.component.html',
+  styleUrls: ['./hoard-container.component.css']
 })
-export class PersonalContainerComponent implements OnInit {
+export class HoardContainerComponent implements OnInit {
 
   @ViewChild('container', {read: ViewContainerRef}) container: ViewContainerRef;
 
@@ -37,7 +37,6 @@ export class PersonalContainerComponent implements OnInit {
   public send() {
     const treasureForm: TreasureFormModel[] = this.options.value;
     this.goldResult = this.generatorService.generatePersonalTreasure(treasureForm);
-    // this.goldResult = this.generatorService.generatePersonalTreasure(this.options.value.numberSel, this.options.value.levelSel);
   }
 
   public addComponent() {

@@ -22,6 +22,7 @@ import { ResultPresenterComponent } from './result-presenter/result-presenter.co
 import { CompoundComponent } from './compound/compound.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { HoardContainerComponent } from './hoard-container/hoard-container.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
     TreasureComponent,
     PersonalContainerComponent,
     ResultPresenterComponent,
-    CompoundComponent
+    CompoundComponent,
+    HoardContainerComponent
   ],
   imports: [
     BrowserModule,
