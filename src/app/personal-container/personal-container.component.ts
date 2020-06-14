@@ -15,10 +15,9 @@ export class PersonalContainerComponent implements OnInit {
 
   private generatorService: GeneratorService;
   private formBuilder: FormBuilder;
+  private components = [];
   public options: FormArray;
   public goldResult: number;
-
-  public components = [];
 
   constructor(generatorService: GeneratorService, formBuilder: FormBuilder, private componentFactoryResolver: ComponentFactoryResolver) {
     this.formBuilder = formBuilder;
@@ -37,7 +36,6 @@ export class PersonalContainerComponent implements OnInit {
   public send() {
     const treasureForm: TreasureFormModel[] = this.options.value;
     this.goldResult = this.generatorService.generatePersonalTreasure(treasureForm);
-    // this.goldResult = this.generatorService.generatePersonalTreasure(this.options.value.numberSel, this.options.value.levelSel);
   }
 
   public addComponent() {

@@ -15,13 +15,11 @@ export class HoardContainerComponent implements OnInit {
 
   private generatorService: GeneratorService;
   private formBuilder: FormBuilder;
+  private components = [];
   public options: FormArray;
-  public result: {
-    totalValue: number;
-    itemList: any[];
-  };
+  public totalValue: number;
+  public itemList: any[];
 
-  public components = [];
 
   constructor(generatorService: GeneratorService, formBuilder: FormBuilder, private componentFactoryResolver: ComponentFactoryResolver) {
     this.formBuilder = formBuilder;
@@ -39,8 +37,9 @@ export class HoardContainerComponent implements OnInit {
 
   public send() {
     const treasureForm: TreasureFormModel[] = this.options.value;
-    this.result = this.generatorService.generateHoardTreasure(treasureForm);
-    console.log(this.result);
+    const result = this.generatorService.generateHoardTreasure(treasureForm);
+    this.totalValue = result.totalValue;
+    this.itemList = result.itemList;
   }
 
   public addComponent() {

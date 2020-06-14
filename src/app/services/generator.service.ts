@@ -49,7 +49,7 @@ export class GeneratorService {
     options.forEach(value => {
       const p = this.generateEachHoardTreasure(value.numberSel, value.levelSel);
       result.totalValue += p.totalValue;
-      result.itemList.concat(p.itemList);
+      result.itemList = result.itemList.concat(p.itemList);
     });
 
     return result;
@@ -57,13 +57,13 @@ export class GeneratorService {
 
   private generateEachHoardTreasure(numberOfChecks: number, challenge: string) {
     let totalValue = 0;
-    const itemList = [];
+    let itemList = [];
     for (let index = 0; index < numberOfChecks; index++) {
       const hoard = this.checkService.getHoard(challenge);
       const hoardValue = this.checkService.checkHoardTreasure(hoard);
       totalValue +=  this.conversorService.convertFromString(hoard.money);
       totalValue +=  this.conversorService.convertFromString(hoardValue.gems);
-      itemList.push(this.checkService.checkMagicItem(hoardValue.objects));
+      itemList = itemList.concat(this.checkService.checkMagicItem(hoardValue.objects));
     }
 
     const result = {

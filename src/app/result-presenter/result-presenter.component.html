@@ -3,7 +3,11 @@
   <button mat-raised-button color="warn" >
     {{ goldResult }}
   </button>
-  <ul *ngFor="let item of itemResult">
-    {{ item }}
+</div>
+<div class="result itemResult">
+  <ul>
+    <li *ngFor="let item of itemResult">
+      {{ item.name }}
+    </li>
   </ul>
 </div>
