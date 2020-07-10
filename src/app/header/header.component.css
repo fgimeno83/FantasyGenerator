@@ -13,5 +13,9 @@
 }
 
 .mat-tab-body {
-  max-height: 100vh;
+  max-height: 90vh;
+}
+
+.mat-tab-body-content {
+  overflow: unset !important;
 }

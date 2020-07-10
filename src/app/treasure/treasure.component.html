@@ -1,2 +1,17 @@
-<app-level></app-level>
-<app-number-input></app-number-input>
+<div class="form-container">
+  <form [formGroup]="options">
+    <mat-form-field appearance="fill">
+      <mat-label>Selecciona uno</mat-label>
+      <mat-select formControlName="checkSel">
+        <mat-option *ngFor="let check of checks" [value]="check.name">
+          {{check.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <div class="button-container">
+      <button class="calcular" color="primary" mat-raised-button (click)="send()" >Calcular</button>
+    </div>
+  </form>
+  <!-- <app-result-presenter [goldResult]="goldResult"></app-result-presenter> -->
+</div>
