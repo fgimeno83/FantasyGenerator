@@ -3,6 +3,7 @@ import { ConversorService } from './conversor.service';
 import { CheckService } from './check.service';
 import { TreasureFormModel } from '../model/treasure-form.model';
 import { element } from 'protractor';
+import { ShopFormModel } from '../model/shop-form.model';
 
 @Injectable({
   providedIn: 'root'
@@ -86,11 +87,11 @@ export class GeneratorService {
     return result;
   }
 
-  public generateMagicShop(weeks: number, gold: number, isStatic: boolean, selectionId: number) {
+  public generateMagicShop(shopForm: ShopFormModel) {
     const totalValue = 0;
-    let itemShopId = selectionId;
-    if (!isStatic) {
-      this.checkService.randomCheck(1, 20) + this.generateBonusCheck(weeks, gold);
+    let itemShopId = shopForm.checkSel;
+    if (!shopForm.isStatic) {
+      itemShopId = this.checkService.randomCheck(1, 20) + this.generateBonusCheck(shopForm.weeks, shopForm.gold);
     }
 
     const itemList = this.checkForMagiShopTreasure(itemShopId);
@@ -104,7 +105,7 @@ export class GeneratorService {
 
   private generateBonusCheck(weeks: number, gold: number) {
     const goldBonus = gold / 100;
-    return (weeks - 1) + (goldBonus.toFixed() - 1);
+    return (weeks - 1) + (goldBonus - 1);
   }
 
   private checkForMagiShopTreasure(id: number) {

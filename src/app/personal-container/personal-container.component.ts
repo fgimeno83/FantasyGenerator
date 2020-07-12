@@ -58,7 +58,7 @@ export class PersonalContainerComponent implements OnInit {
   }
 
   public removeComponent(deletedComp: CompoundComponent) {
-    const component = this.components.find(component => component.instance === deletedComp);
+    const component = this.components.find(comp => comp.instance === deletedComp);
     const componentIndex = this.components.indexOf(component);
     this.container.remove(componentIndex);
     this.components.splice(componentIndex, 1);

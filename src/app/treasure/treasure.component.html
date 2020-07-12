@@ -3,7 +3,7 @@
     <mat-form-field appearance="fill">
       <mat-label>Selecciona uno</mat-label>
       <mat-select formControlName="checkSel">
-        <mat-option *ngFor="let check of checks" [value]="check.name">
+        <mat-option *ngFor="let check of checks" [value]="check.id">
           {{check.name}}
         </mat-option>
       </mat-select>

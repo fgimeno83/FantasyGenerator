@@ -13,15 +13,15 @@ export class TreasureComponent implements OnInit {
   private generatorService: GeneratorService;
   public options: FormGroup;
   public checks = [
-    {name: '1-5'},
-    {name: '6-10'},
-    {name: '11-15'},
-    {name: '16-20'},
-    {name: '21-25'},
-    {name: '26-30'},
-    {name: '31-35'},
-    {name: '36-40'},
-    {name: '41+'}
+    {id: 1, name: '1-5'},
+    {id: 2, name: '6-10'},
+    {id: 3, name: '11-15'},
+    {id: 4, name: '16-20'},
+    {id: 5, name: '21-25'},
+    {id: 6, name: '26-30'},
+    {id: 7, name: '31-35'},
+    {id: 8, name: '36-40'},
+    {id: 9, name: '41+'}
   ];
 
   constructor(generatorService: GeneratorService, formBuilder: FormBuilder) {
@@ -29,11 +29,13 @@ export class TreasureComponent implements OnInit {
     this.formBuilder = formBuilder;
   }
 
-  //+1 semana, +1 100po, max +10, percepcion
   ngOnInit(): void {
+    this.options = this.formBuilder.group ({
+      checkSel: ['']
+    });
   }
 
   public send() {
-
+    this.generatorService.generateMagicShop(this.options.value);
   }
 }
