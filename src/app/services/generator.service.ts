@@ -109,7 +109,7 @@ export class GeneratorService {
   }
 
   private checkForMagiShopTreasure(id: number) {
-    const itemShopResult = this.magicItemShopMap.filter(itemShopElement => itemShopElement.id = id).map(item => item.value);
+    const itemShopResult = this.magicItemShopMap.filter(itemShopElement => itemShopElement.id === id).map(item => item.value);
     return this.checkService.checkMagicItem(itemShopResult[0]);
   }
 }

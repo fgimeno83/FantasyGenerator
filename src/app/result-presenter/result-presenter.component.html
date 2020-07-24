@@ -1,5 +1,5 @@
 <mat-divider></mat-divider>
-<div class="result">
+<div *ngIf="goldResult > 0" class="result">
   <button mat-raised-button color="warn" >
     {{ goldResult }}
   </button>

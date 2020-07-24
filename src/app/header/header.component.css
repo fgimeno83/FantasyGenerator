@@ -5,7 +5,7 @@
 }
 
 .section {
-  margin-top: 10%;
+  padding-top: 10%;
 }
 
 .mat-tab-label {
@@ -13,6 +13,7 @@
 }
 
 .mat-tab-body {
+  height: 90vh;
   max-height: 90vh;
 }
 

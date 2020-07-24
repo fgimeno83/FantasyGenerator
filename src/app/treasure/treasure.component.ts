@@ -12,6 +12,8 @@ export class TreasureComponent implements OnInit {
   private formBuilder: FormBuilder;
   private generatorService: GeneratorService;
   public options: FormGroup;
+  public totalValue: number;
+  public itemList: any[];
   public checks = [
     {id: 1, name: '1-5'},
     {id: 2, name: '6-10'},
@@ -31,11 +33,14 @@ export class TreasureComponent implements OnInit {
 
   ngOnInit(): void {
     this.options = this.formBuilder.group ({
-      checkSel: ['']
+      checkSel: [''],
+      isStatic: ['']
     });
   }
 
   public send() {
-    this.generatorService.generateMagicShop(this.options.value);
+    const result = this.generatorService.generateMagicShop(this.options.value);
+    this.totalValue = result.totalValue;
+    this.itemList = result.itemList;
   }
 }

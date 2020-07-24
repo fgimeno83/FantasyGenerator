@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatListModule } from '@angular/material/list';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
@@ -42,6 +43,7 @@ import { HoardContainerComponent } from './hoard-container/hoard-container.compo
     BrowserAnimationsModule,
     MatTabsModule,
     MatListModule,
+    MatCheckboxModule,
     MatFormFieldModule,
     MatSelectModule,
     MatInputModule,
