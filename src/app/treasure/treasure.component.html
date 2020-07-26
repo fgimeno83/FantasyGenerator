@@ -8,17 +8,21 @@
     <mat-form-field appearance="fill">
       <mat-label>Selecciona uno</mat-label>
       <mat-select formControlName="checkSel">
-        <mat-option *ngFor="let check of checks" [value]="check.id">
+        <mat-option disabled="isDisabled('static')" *ngFor="let check of checks" [value]="check.id">
           {{check.name}}
         </mat-option>
       </mat-select>
     </mat-form-field>
 
-
-    <!-- <mat-form-field appearance="fill">
-      <mat-label>Selección directa</mat-label>
-      <mat-checkbox [formControl]="isStatic"></mat-checkbox>
-    </mat-form-field> -->
+    <mat-form-field appeareance="fill">
+      <mat-label>Número de semanas</mat-label>
+      <input disabled="isDisabled('')" matInput formControlName="weeks" >
+    </mat-form-field>
+    <!-- --matInput #numberInput -->
+    <mat-form-field appeareance="fill">
+      <mat-label>Oro invertido</mat-label>
+      <input disabled="isDisabled('')" matInput formControlName="gold" >
+    </mat-form-field>
 
     <div class="button-container">
       <button class="calcular" color="primary" mat-raised-button (click)="send()" >Calcular</button>

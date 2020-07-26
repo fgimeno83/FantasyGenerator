@@ -15,15 +15,15 @@ export class GeneratorService {
   private checkService: CheckService;
 
   private magicItemShopMap = [
-    {id: 1, value: '1d6:A'},
-    {id: 2, value: '1d3:B'},
-    {id: 3, value: '1d4:C'},
-    {id: 4, value: '1d4:D'},
-    {id: 5, value: '1d4:E'},
-    {id: 6, value: '1d4:F'},
-    {id: 7, value: '1d4:G'},
-    {id: 8, value: '1d4:H'},
-    {id: 9, value: '1d4:I'}
+    {id: 1, range: '1-5', value: '1d6:A'},
+    {id: 2, range: '6-10', value: '1d3:B'},
+    {id: 3, range: '11-15', value: '1d4:C'},
+    {id: 4, range: '16-20', value: '1d4:D'},
+    {id: 5, range: '21-25', value: '1d4:E'},
+    {id: 6, range: '26-30', value: '1d4:F'},
+    {id: 7, range: '31-35', value: '1d4:G'},
+    {id: 8, range: '36-40', value: '1d4:H'},
+    {id: 9, range: '41-100', value: '1d4:I'}
   ];
 
   constructor(conversorService: ConversorService, checkService: CheckService) {
@@ -89,12 +89,15 @@ export class GeneratorService {
 
   public generateMagicShop(shopForm: ShopFormModel) {
     const totalValue = 0;
-    let itemShopId = shopForm.checkSel;
-    if (!shopForm.isStatic) {
-      itemShopId = this.checkService.randomCheck(1, 20) + this.generateBonusCheck(shopForm.weeks, shopForm.gold);
-    }
+    const itemShopId = shopForm.checkSel;
+    let itemList: string[];
 
-    const itemList = this.checkForMagiShopTreasure(itemShopId);
+    if (!shopForm.isStatic) {
+      const itemShopCheck = this.checkService.randomCheck(1, 20) + this.generateBonusCheck(shopForm.weeks, shopForm.gold);
+      itemList = this.checkForMagicShopTreasure(itemShopCheck);
+    } else {
+      itemList = this.checkForStaticMagicShopTreasure(itemShopId);
+    }
 
     const result = {
       totalValue,
@@ -104,12 +107,20 @@ export class GeneratorService {
   }
 
   private generateBonusCheck(weeks: number, gold: number) {
-    const goldBonus = gold / 100;
-    return (weeks - 1) + (goldBonus - 1);
+    const goldBonus = parseInt((gold / 100).toFixed(), 10);
+    const result = (weeks - 1) + (goldBonus - 1);
+
+    return (result >= 0) ? result : 0;
   }
 
-  private checkForMagiShopTreasure(id: number) {
+  private checkForStaticMagicShopTreasure(id: number) {
     const itemShopResult = this.magicItemShopMap.filter(itemShopElement => itemShopElement.id === id).map(item => item.value);
+    return this.checkService.checkMagicItem(itemShopResult[0]);
+  }
+
+  private checkForMagicShopTreasure(check: number) {
+    const itemShopResult = this.magicItemShopMap.filter(itemShopElement =>
+      this.checkService.isNumberInRange(check, itemShopElement.range)).map(item => item.value);
     return this.checkService.checkMagicItem(itemShopResult[0]);
   }
 }

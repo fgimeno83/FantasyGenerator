@@ -88,7 +88,7 @@ export class CheckService {
     return total;
   }
 
-  private isNumberInRange(check: number, stringRange: string) {
+  public isNumberInRange(check: number, stringRange: string) {
     let min: number;
     let max: number;
     if (stringRange.includes(this.RANGE_SEPARATOR)){
