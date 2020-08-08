@@ -21,7 +21,7 @@ import { TreasureComponent } from './treasure/treasure.component';
 import { PersonalContainerComponent } from './personal-container/personal-container.component';
 import { ResultPresenterComponent } from './result-presenter/result-presenter.component';
 import { CompoundComponent } from './compound/compound.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { HoardContainerComponent } from './hoard-container/hoard-container.component';
 
@@ -35,7 +35,8 @@ import { HoardContainerComponent } from './hoard-container/hoard-container.compo
     PersonalContainerComponent,
     ResultPresenterComponent,
     CompoundComponent,
-    HoardContainerComponent
+    HoardContainerComponent,
+    FormsModule
   ],
   imports: [
     BrowserModule,

@@ -2,26 +2,27 @@
   <form [formGroup]="options">
 
     <div class="checkSel">
-      <mat-checkbox formControlName="isStatic">Selección directa</mat-checkbox>
+      <mat-checkbox formControlName="isStatic" >Selección directa</mat-checkbox>
+      <!-- [formControl]="checkDisable" -->
     </div>
 
     <mat-form-field appearance="fill">
       <mat-label>Selecciona uno</mat-label>
-      <mat-select formControlName="checkSel">
-        <mat-option disabled="isDisabled('static')" *ngFor="let check of checks" [value]="check.id">
+      <mat-select formControlName="checkSel" [disabled]="options.get('isStatic')">
+        <mat-option *ngFor="let check of checks" [value]="check.id">
           {{check.name}}
         </mat-option>
       </mat-select>
     </mat-form-field>
 
-    <mat-form-field appeareance="fill">
+    <mat-form-field appearance="fill">
       <mat-label>Número de semanas</mat-label>
-      <input disabled="isDisabled('')" matInput formControlName="weeks" >
+      <input matInput formControlName="weeks" >
     </mat-form-field>
-    <!-- --matInput #numberInput -->
-    <mat-form-field appeareance="fill">
+
+    <mat-form-field appearance="fill">
       <mat-label>Oro invertido</mat-label>
-      <input disabled="isDisabled('')" matInput formControlName="gold" >
+      <input matInput formControlName="gold" >
     </mat-form-field>
 
     <div class="button-container">
