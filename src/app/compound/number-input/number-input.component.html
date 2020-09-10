@@ -7,14 +7,17 @@
   <!-- <input matInput [formControl]="numberElementsControl" [errorStateMatcher]="matcher"> -->
   <mat-hint>Introduce un número {{ hasEmailError }}</mat-hint>
   <!-- <mat-error *ngIf="parentForm.hasError('email') && !parentForm.hasError('required')"> -->
-  <mat-error *ngIf="hasError('required')">
+  <!-- <mat-error *ngIf="hasError('required')">
     Sólo se admiten números
-  </mat-error>
-  <!-- <mat-error *ngIf="parentForm.hasError('required')"> -->
-  <mat-error *ngIf="hasError('email')">
+  </mat-error> -->
+
+  <!-- <mat-error *ngIf="hasError('email')"> -->
+  <mat-error >
     Number is <strong>required</strong>
   </mat-error>
-  <mat-error *ngIf="parentForm.hasError('email')">
+  <div [ngClass]="{'errorMessage': hasError}">Error patata</div>
+  <!-- <mat-error *ngIf="parentForm.hasError('email')"> -->
+  <!-- <mat-error >
     test
-  </mat-error>
+  </mat-error> -->
 </mat-form-field>

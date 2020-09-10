@@ -2,13 +2,13 @@
   <form [formGroup]="options">
 
     <div class="checkSel">
-      <mat-checkbox formControlName="isStatic" >Selección directa</mat-checkbox>
+      <mat-checkbox formControlName="isStatic" (click)="checkStatic()" >Selección directa</mat-checkbox>
       <!-- [formControl]="checkDisable" -->
     </div>
 
     <mat-form-field appearance="fill">
       <mat-label>Selecciona uno</mat-label>
-      <mat-select formControlName="checkSel" [disabled]="options.get('isStatic')">
+      <mat-select formControlName="checkSel">
         <mat-option *ngFor="let check of checks" [value]="check.id">
           {{check.name}}
         </mat-option>

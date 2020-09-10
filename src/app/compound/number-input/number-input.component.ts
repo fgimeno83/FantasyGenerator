@@ -17,6 +17,8 @@ export class NumberInputComponent implements OnInit {
 
   public hasEmailError = true;
 
+  public hasError = true;
+
   public matcher = {
     isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null) {
       const isSubmitted = form && form.submitted;
@@ -32,6 +34,8 @@ export class NumberInputComponent implements OnInit {
         } else {
           this.hasEmailError = false;
         }
+
+        this.hasError = false;
       }
     }
   };
@@ -41,19 +45,19 @@ export class NumberInputComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public hasError(errorType: string): boolean {
-    console.log('haserror');
-    let result = false;
-    if ('required' === errorType) {
-      result = this.hasRequiredError;
-    }
+  // public hasError(errorType: string): boolean {
+  //   console.log('haserror');
+  //   let result = false;
+  //   if ('required' === errorType) {
+  //     result = this.hasRequiredError;
+  //   }
 
-    if ('email' === errorType) {
-      result = this.hasEmailError;
-    }
+  //   if ('email' === errorType) {
+  //     result = this.hasEmailError;
+  //   }
 
-    return result;
-  }
+  //   return result;
+  // }
 }
 
 export class MyErrorStateMatcher implements ErrorStateMatcher {

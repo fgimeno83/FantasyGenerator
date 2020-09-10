@@ -14,6 +14,7 @@ export class TreasureComponent implements OnInit {
   public options: FormGroup;
   public totalValue: number;
   public itemList: any[];
+  public isDisabled: string;
   public checks = [
     {id: 1, name: '1-5'},
     {id: 2, name: '6-10'},
@@ -33,8 +34,8 @@ export class TreasureComponent implements OnInit {
 
   ngOnInit(): void {
     this.options = this.formBuilder.group ({
-      checkSel: [''],
-      isStatic: ['false'],
+      checkSel: [{value: '', disabled: 'true'} ],
+      isStatic: [''],
       weeks: [''],
       gold: ['']
     });
@@ -44,5 +45,18 @@ export class TreasureComponent implements OnInit {
     const result = this.generatorService.generateMagicShop(this.options.value);
     this.totalValue = result.totalValue;
     this.itemList = result.itemList;
+  }
+
+  public checkStatic(){
+    const checkStatus = this.options.get('checkSel');
+    if (checkStatus.disabled) {
+      checkStatus.enable();
+      this.options.get('weeks').disable();
+      this.options.get('gold').disable();
+    } else {
+      checkStatus.disable();
+      this.options.get('weeks').enable();
+      this.options.get('gold').enable();
+    }
   }
 }
