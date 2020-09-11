@@ -7,7 +7,7 @@
 
     <div class="button-container">
       <button class="anadir" color="primary" mat-raised-button (click)="addComponent()">Añadir</button>
-      <button class="calcular" mat-raised-button (click)="send()" (disabled)="options.invalid">Calcular</button>
+      <button class="calcular" mat-raised-button (click)="send()" >Calcular</button>
     </div>
   </form>
   <app-result-presenter [goldResult]="totalValue" [itemResult]="itemList"></app-result-presenter>

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { GeneratorService } from '../services/generator.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-treasure',
@@ -34,10 +35,10 @@ export class TreasureComponent implements OnInit {
 
   ngOnInit(): void {
     this.options = this.formBuilder.group ({
-      checkSel: [{value: '', disabled: 'true'} ],
+      checkSel: [{value: '', disabled: 'true'}, Validators.required ],
       isStatic: [''],
-      weeks: [''],
-      gold: ['']
+      weeks: ['', [Validators.required, Validators.pattern('[0-9 ]*')]],
+      gold: ['', [Validators.required, Validators.pattern('[0-9 ]*')]]
     });
   }
 
@@ -58,5 +59,14 @@ export class TreasureComponent implements OnInit {
       this.options.get('weeks').enable();
       this.options.get('gold').enable();
     }
+  }
+
+  public getErrorMessage(component: string) {
+    let message = 'Sólo se permiten valores numéricos';
+    if (this.options.get(component).hasError('required')) {
+      message = 'Este valor es obligatorio';
+    }
+
+    return message;
   }
 }

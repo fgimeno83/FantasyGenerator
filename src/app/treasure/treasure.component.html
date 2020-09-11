@@ -3,7 +3,6 @@
 
     <div class="checkSel">
       <mat-checkbox formControlName="isStatic" (click)="checkStatic()" >Selección directa</mat-checkbox>
-      <!-- [formControl]="checkDisable" -->
     </div>
 
     <mat-form-field appearance="fill">
@@ -13,16 +12,19 @@
           {{check.name}}
         </mat-option>
       </mat-select>
+      <mat-error>Este valor es obligatorio</mat-error>
     </mat-form-field>
 
     <mat-form-field appearance="fill">
       <mat-label>Número de semanas</mat-label>
       <input matInput formControlName="weeks" >
+      <mat-error>{{getErrorMessage('weeks')}}</mat-error>
     </mat-form-field>
 
     <mat-form-field appearance="fill">
       <mat-label>Oro invertido</mat-label>
       <input matInput formControlName="gold" >
+      <mat-error>{{getErrorMessage('gold')}}</mat-error>
     </mat-form-field>
 
     <div class="button-container">
