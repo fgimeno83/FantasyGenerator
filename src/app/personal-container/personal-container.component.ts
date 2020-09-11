@@ -28,14 +28,24 @@ export class PersonalContainerComponent implements OnInit {
     this.options = new FormArray([
       this.formBuilder.group({
         levelSel: ['', Validators.required],
-        numberSel: ['', [Validators.required, Validators.email]]
+        numberSel: ['', [Validators.required, Validators.pattern('[0-9 ]*')]]
       })
     ]);
   }
 
   public send() {
     const treasureForm: TreasureFormModel[] = this.options.value;
-    this.goldResult = this.generatorService.generatePersonalTreasure(treasureForm);
+    if(!this.checkErrorsWhenSent()) {
+      this.goldResult = this.generatorService.generatePersonalTreasure(treasureForm);
+    }
+  }
+
+  private checkErrorsWhenSent() {
+    this.options.controls.forEach(element => {
+      element.get('levelSel').markAsTouched();
+    });
+
+    return this.options.invalid;
   }
 
   public addComponent() {
@@ -46,10 +56,7 @@ export class PersonalContainerComponent implements OnInit {
 
     this.options.push(this.formBuilder.group({
       levelSel: ['', Validators.required],
-      numberSel: ['', [
-        Validators.required,
-        Validators.email
-      ]]
+        numberSel: ['', [Validators.required, Validators.pattern('[0-9 ]*')]]
     }));
 
     (componentRef.instance as CompoundComponent).parentForm = this.options.controls[this.components.length + 1] as FormGroup;
@@ -62,7 +69,7 @@ export class PersonalContainerComponent implements OnInit {
     const componentIndex = this.components.indexOf(component);
     this.container.remove(componentIndex);
     this.components.splice(componentIndex, 1);
-    this.options.removeAt(componentIndex);
+    this.options.removeAt(componentIndex + 1);
   }
 
 }
