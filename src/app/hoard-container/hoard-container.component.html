@@ -1,13 +1,13 @@
 <div class="form-container">
   <form [formGroup]="options">
-    <app-compound [parentForm]="options.controls[0]" (indexComp)="removeComponent($event)"></app-compound>
+    <app-compound [parentForm]="options.controls[0]" (indexComp)="removeComponent($event)" [disableDelete]="true"></app-compound>
 
     <ng-template #container>
     </ng-template>
 
     <div class="button-container">
       <button class="anadir" color="primary" mat-raised-button (click)="addComponent()">Añadir</button>
-      <button class="calcular" mat-raised-button (click)="send()" >Calcular</button>
+      <button class="calcular" color="primary" mat-raised-button (click)="send()" >Calcular</button>
     </div>
   </form>
   <app-result-presenter [goldResult]="totalValue" [itemResult]="itemList"></app-result-presenter>

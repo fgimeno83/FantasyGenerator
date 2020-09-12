@@ -5,8 +5,7 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-treasure',
-  templateUrl: './treasure.component.html',
-  styleUrls: ['./treasure.component.css']
+  templateUrl: './treasure.component.html'
 })
 export class TreasureComponent implements OnInit {
 
@@ -43,9 +42,15 @@ export class TreasureComponent implements OnInit {
   }
 
   public send() {
-    const result = this.generatorService.generateMagicShop(this.options.value);
-    this.totalValue = result.totalValue;
-    this.itemList = result.itemList;
+    if (!this.checkErrors()) {
+      const result = this.generatorService.generateMagicShop(this.options.value);
+      this.totalValue = result.totalValue;
+      this.itemList = result.itemList;
+    }
+  }
+
+  private checkErrors() {
+    return this.options.invalid;
   }
 
   public checkStatic(){

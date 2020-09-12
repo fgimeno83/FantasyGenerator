@@ -3,8 +3,7 @@ import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-number-input',
-  templateUrl: './number-input.component.html',
-  styleUrls: ['./number-input.component.css']
+  templateUrl: './number-input.component.html'
 })
 export class NumberInputComponent implements OnInit {
 
@@ -17,7 +16,7 @@ export class NumberInputComponent implements OnInit {
 
   public getErrorMessage() {
     let message = 'Sólo se permiten valores numéricos';
-    if(this.parentForm.get('numberSel').hasError('required')) {
+    if (this.parentForm.get('numberSel').hasError('required')) {
       message = 'Este valor es obligatorio';
     }
 
