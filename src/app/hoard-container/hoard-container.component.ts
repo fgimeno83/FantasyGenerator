@@ -1,15 +1,15 @@
 import { Component, OnInit, ComponentFactoryResolver, ViewChild, ViewContainerRef } from '@angular/core';
 import { GeneratorService } from '../services/generator.service';
-import {FormBuilder, FormGroup, Validators, FormArray} from '@angular/forms';
-import { CompoundComponent } from '../compound/compound.component';
+import { FormBuilder, FormArray, Validators, FormGroup } from '@angular/forms';
 import { TreasureFormModel } from '../model/treasure-form.model';
+import { CompoundComponent } from '../compound/compound.component';
 
 @Component({
-  selector: 'app-personal-container',
-  templateUrl: './personal-container.component.html',
-  styleUrls: ['./personal-container.component.css']
+  selector: 'app-hoard-container',
+  templateUrl: './hoard-container.component.html',
+  styleUrls: ['./hoard-container.component.css']
 })
-export class PersonalContainerComponent implements OnInit {
+export class HoardContainerComponent implements OnInit {
 
   @ViewChild('container', {read: ViewContainerRef}) container: ViewContainerRef;
 
@@ -17,7 +17,9 @@ export class PersonalContainerComponent implements OnInit {
   private formBuilder: FormBuilder;
   private components = [];
   public options: FormArray;
-  public goldResult: number;
+  public totalValue: number;
+  public itemList: any[];
+
 
   constructor(generatorService: GeneratorService, formBuilder: FormBuilder, private componentFactoryResolver: ComponentFactoryResolver) {
     this.formBuilder = formBuilder;
@@ -35,8 +37,10 @@ export class PersonalContainerComponent implements OnInit {
 
   public send() {
     const treasureForm: TreasureFormModel[] = this.options.value;
-    if(!this.checkErrorsWhenSent()) {
-      this.goldResult = this.generatorService.generatePersonalTreasure(treasureForm);
+    if (!this.checkErrorsWhenSent()) {
+      const result = this.generatorService.generateHoardTreasure(treasureForm);
+      this.totalValue = result.totalValue;
+      this.itemList = result.itemList;
     }
   }
 
@@ -56,7 +60,7 @@ export class PersonalContainerComponent implements OnInit {
 
     this.options.push(this.formBuilder.group({
       levelSel: ['', Validators.required],
-        numberSel: ['', [Validators.required, Validators.pattern('[0-9 ]*')]]
+      numberSel: ['', [Validators.required, Validators.pattern('[0-9 ]*')]]
     }));
 
     (componentRef.instance as CompoundComponent).parentForm = this.options.controls[this.components.length + 1] as FormGroup;
@@ -65,7 +69,7 @@ export class PersonalContainerComponent implements OnInit {
   }
 
   public removeComponent(deletedComp: CompoundComponent) {
-    const component = this.components.find(comp => comp.instance === deletedComp);
+    const component = this.components.find(component => component.instance === deletedComp);
     const componentIndex = this.components.indexOf(component);
     this.container.remove(componentIndex);
     this.components.splice(componentIndex, 1);

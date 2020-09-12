@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { CONVERSION_CONSTANTS } from '../model/conversor-constants';
 import { CoinType } from '../model/coin-enum.model';
+import { CheckService } from './check.service';
 
 @Injectable({
   providedIn: 'root'
@@ -10,11 +11,15 @@ export class ConversorService {
   private VALUE_SEPARATOR: string;
   private COIN_TYPE_SEPARATOR: string;
   private MULTIPLIER_SEPARATOR: string;
+  private BASIC_MULTIPLIER_VALUE: string;
+  private checkService: CheckService;
 
-  constructor() {
+  constructor(checkService: CheckService) {
     this.VALUE_SEPARATOR = ';';
     this.COIN_TYPE_SEPARATOR = ':';
     this.MULTIPLIER_SEPARATOR = 'x';
+    this.BASIC_MULTIPLIER_VALUE = '1';
+    this.checkService = checkService;
    }
 
   public convert(cuantity: number, source: CoinType, target: CoinType) {
@@ -27,22 +32,21 @@ export class ConversorService {
 
     values.map(value => value.split(this.COIN_TYPE_SEPARATOR));
 
+    let total = 0;
     values.forEach(value => {
       const valueType = value.split(this.COIN_TYPE_SEPARATOR);
       let coinValue = valueType[0];
-      let multiplier: string;
+      let multiplier = this.BASIC_MULTIPLIER_VALUE;
       if (coinValue.includes(this.MULTIPLIER_SEPARATOR)) {
         const coinValueArray = coinValue.split(this.MULTIPLIER_SEPARATOR);
         coinValue = coinValueArray[0];
         multiplier = coinValueArray[1];
       }
 
-      // TODO
-      // check dices
-      // multiply
-      // convert
-
+      total += this.checkService.randomCheckFromString(coinValue) * parseInt(multiplier, 10);
     });
+
+    return total;
   }
 
 

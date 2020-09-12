@@ -1,5 +1,21 @@
-<mat-tab-group>
-  <mat-tab label="First"> Content 1 </mat-tab>
-  <mat-tab label="Second"> Content 2 </mat-tab>
-  <mat-tab label="Third"> Content 3 </mat-tab>
-</mat-tab-group>
+<div class="main">
+  <mat-tab-group>
+
+    <mat-tab label="Personal">
+      <div class="section">
+        <app-personal-container></app-personal-container>
+      </div>
+    </mat-tab>
+    <mat-tab label="Acumulado">
+      <div class="section">
+        <app-hoard-container></app-hoard-container>
+      </div>
+    </mat-tab>
+    <mat-tab label="Tienda mágica">
+      <div class="section">
+        <app-treasure></app-treasure>
+      </div>
+    </mat-tab>
+
+  </mat-tab-group>
+</div>

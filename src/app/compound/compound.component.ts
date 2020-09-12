@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, ComponentFactoryResolver, ViewContainerRef, ViewChild, Output, EventEmitter } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-compound',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CompoundComponent implements OnInit {
 
-  constructor() { }
+  // @ViewChild('container2', {read: ViewContainerRef}) container: ViewContainerRef;
+
+  @Input() public parentForm: FormGroup;
+  @Output() public indexComp = new EventEmitter<CompoundComponent>();
+
+  constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
 
   ngOnInit(): void {
   }

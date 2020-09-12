@@ -1,5 +1,13 @@
-<!-- <mat-list *ngFor="let result of results"> -->
-  <mat-list-item>result</mat-list-item>
-  <mat-divider></mat-divider>
-<!-- </mat-list> -->
-
+<mat-divider></mat-divider>
+<div *ngIf="goldResult > 0" class="result">
+  <button mat-raised-button color="warn" >
+    {{ goldResult }}
+  </button>
+</div>
+<div class="result itemResult">
+  <ul>
+    <li *ngFor="let item of itemResult">
+      {{ item.name }}
+    </li>
+  </ul>
+</div>

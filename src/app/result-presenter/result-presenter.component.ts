@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-result-presenter',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./result-presenter.component.css']
 })
 export class ResultPresenterComponent implements OnInit {
+
+  @Input() public goldResult: number;
+  @Input() public itemResult: any[];
 
   constructor() { }
 

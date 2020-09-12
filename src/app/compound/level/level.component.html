@@ -1,9 +1,11 @@
-<h4>Nivel</h4>
-<mat-form-field>
+<mat-form-field [formGroup]="parentForm" appearance="fill">
   <mat-label>Selecciona uno</mat-label>
-  <mat-select>
+  <mat-select formControlName="levelSel" #levelSelection required>
     <mat-option *ngFor="let level of levels" [value]="level.name">
       {{level.name}}
     </mat-option>
   </mat-select>
+  <mat-error>
+    Este valor es obligatorio
+  </mat-error>
 </mat-form-field>

@@ -1,0 +1,22 @@
+.main {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.section {
+  padding-top: 10%;
+}
+
+.mat-tab-label {
+  padding: 0 8px !important;
+}
+
+.mat-tab-body {
+  height: 90vh;
+  max-height: 90vh;
+}
+
+.mat-tab-body-content {
+  overflow: unset !important;
+}

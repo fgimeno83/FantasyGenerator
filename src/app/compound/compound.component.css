@@ -1,0 +1,13 @@
+.compound-component-container {
+  margin-bottom: 10%;
+}
+
+.delete {
+  display: inline-block;
+  vertical-align: super;
+}
+
+.input-data {
+  display: inline-block;
+  margin-right: 3%;
+}

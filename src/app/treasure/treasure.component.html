@@ -1,2 +1,35 @@
-<app-level></app-level>
-<app-number-input></app-number-input>
+<div class="form-container">
+  <form [formGroup]="options">
+
+    <div class="checkSel">
+      <mat-checkbox formControlName="isStatic" (click)="checkStatic()" >Selección directa</mat-checkbox>
+    </div>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Selecciona uno</mat-label>
+      <mat-select formControlName="checkSel">
+        <mat-option *ngFor="let check of checks" [value]="check.id">
+          {{check.name}}
+        </mat-option>
+      </mat-select>
+      <mat-error>Este valor es obligatorio</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Número de semanas</mat-label>
+      <input matInput formControlName="weeks" >
+      <mat-error>{{getErrorMessage('weeks')}}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Oro invertido</mat-label>
+      <input matInput formControlName="gold" >
+      <mat-error>{{getErrorMessage('gold')}}</mat-error>
+    </mat-form-field>
+
+    <div class="button-container">
+      <button class="calcular" color="primary" mat-raised-button (click)="send()" >Calcular</button>
+    </div>
+  </form>
+  <app-result-presenter [goldResult]="totalValue" [itemResult]="itemList"></app-result-presenter>
+</div>
