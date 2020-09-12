@@ -8,9 +8,8 @@ import { FormGroup } from '@angular/forms';
 })
 export class CompoundComponent implements OnInit {
 
-  // @ViewChild('container2', {read: ViewContainerRef}) container: ViewContainerRef;
-
   @Input() public parentForm: FormGroup;
+  @Input() public disableDelete: boolean;
   @Output() public indexComp = new EventEmitter<CompoundComponent>();
 
   constructor(private componentFactoryResolver: ComponentFactoryResolver) { }

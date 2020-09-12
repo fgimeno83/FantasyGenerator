@@ -24,7 +24,6 @@ export class CheckService {
   constructor() {
     this.personalTreasure = personalTreasureJson;
     this.hoardTreasure = hoardTreasureJson;
-    // this.magicItems = magicItemsJson;
     this.RANGE_SEPARATOR = '-';
     this.ITEM_SEPARATOR = ':';
     this.MAX_CHECK_VALUE = 100;
@@ -63,20 +62,11 @@ export class CheckService {
     return itemList;
   }
 
-  // private isChallengeSelected(personal: Personal, challenge: string) {
-  //   console.log(personal.challenge + ' - ' + challenge);
-  //   // return personal.challenge === challenge;
-  //   const result = this.isNumberInRange(parseInt(challenge, 10), personal.challenge);
-  //   console.log(result);
-  //   return result;
-  // }
-
   public randomCheck(min: number, max: number) {
     return Math.floor(Math.random() * (max - min + 1) + min);
   }
 
   public randomCheckFromString(check: string) {
-    // 4d6
     let total = 0;
     const checkArray = check.split(this.DICE_SEPARATOR);
     const numberOfChecks = checkArray[0];

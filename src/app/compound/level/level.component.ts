@@ -3,8 +3,7 @@ import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-level',
-  templateUrl: './level.component.html',
-  styleUrls: ['./level.component.css']
+  templateUrl: './level.component.html'
 })
 export class LevelComponent implements OnInit {
 

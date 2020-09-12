@@ -4,6 +4,6 @@
     <app-level [parentForm]="parentForm"></app-level>
   </div>
   <div class="delete">
-    <button mat-mini-fab color="primary" (click)="indexComp.emit(this)"><mat-icon>delete</mat-icon></button>
+    <button mat-mini-fab color="primary" (click)="indexComp.emit(this)" [disabled]="disableDelete"><mat-icon>delete</mat-icon></button>
   </div>
 </div>

@@ -27,7 +27,6 @@ export class ConversorService {
   }
 
   public convertFromString(source: string) {
-    // 4d6x100:pc;1d6x10:pe
     const values = source.split(this.VALUE_SEPARATOR);
 
     values.map(value => value.split(this.COIN_TYPE_SEPARATOR));

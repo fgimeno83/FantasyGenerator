@@ -35,7 +35,6 @@ export class GeneratorService {
     let totalValue = 0;
     options.forEach(value => {
       const p = this.generateEachPersonalTreasure(value.numberSel, value.levelSel);
-      console.log(p);
       totalValue += p;
     });
 
