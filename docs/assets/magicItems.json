@@ -1,0 +1,1908 @@
+{
+  "item": [
+      {
+          "table": "A",
+          "values": [
+              {
+                  "check": "1-50",
+                  "name": "Poción de curación",
+                  "page": ""
+              },
+              {
+                  "check": "51-60",
+                  "name": "Pergamino de conjuro (truco)",
+                  "page": ""
+              },
+              {
+                  "check": "61-70",
+                  "name": "Poción de trepar",
+                  "page": ""
+              },
+              {
+                  "check": "71-90",
+                  "name": "Pergamino de conjuro (N1)",
+                  "page": ""
+              },
+              {
+                  "check": "91-94",
+                  "name": "Pergamino de conjuro (N2)",
+                  "page": ""
+              },
+              {
+                  "check": "95-98",
+                  "name": "Poción de curación mayor",
+                  "page": ""
+              },
+              {
+                  "check": "99",
+                  "name": "Bolsa de contención",
+                  "page": ""
+              },
+              {
+                  "check": "100",
+                  "name": "Globo flotante",
+                  "page": ""
+              }
+          ]
+      },
+      {
+          "table": "B",
+          "values": [
+              {
+                  "check": "1-15",
+                  "name": "Poción de curación mayor",
+                  "page": ""
+              },
+              {
+                  "check": "16-22",
+                  "name": "Poción de aliento de fuego",
+                  "page": ""
+              },
+              {
+                  "check": "23-29",
+                  "name": "Poción de resistencia",
+                  "page": ""
+              },
+              {
+                  "check": "30-34",
+                  "name": "Munición +1",
+                  "page": ""
+              },
+              {
+                  "check": "35-39",
+                  "name": "Poción de amistad animal",
+                  "page": ""
+              },
+              {
+                  "check": "40-44",
+                  "name": "Poción de fuerza de gigante de las colinas",
+                  "page": ""
+              },
+              {
+                  "check": "45-49",
+                  "name": "Poción de crecimiento",
+                  "page": ""
+              },
+              {
+                  "check": "50-54",
+                  "name": "Poción de respirar debajo del agua",
+                  "page": ""
+              },
+              {
+                  "check": "55-59",
+                  "name": "Pergamino de conjuro (N2)",
+                  "page": ""
+              },
+              {
+                  "check": "60-64",
+                  "name": "Pergamino de conjuro (N3)",
+                  "page": ""
+              },
+              {
+                  "check": "65-67",
+                  "name": "Bolsa de contención",
+                  "page": ""
+              },
+              {
+                  "check": "68-70",
+                  "name": "Ungüento de Keoghtom",
+                  "page": ""
+              },
+              {
+                  "check": "71-73",
+                  "name": "Aceite escurridizo",
+                  "page": "150"
+              },
+              {
+                  "check": "74-75",
+                  "name": "Polvo de desaparición",
+                  "page": ""
+              },
+              {
+                  "check": "76-77",
+                  "name": "Polvo de sequedad",
+                  "page": ""
+              },
+              {
+                  "check": "78-79",
+                  "name": "Polvo de estornudar y atragantarse",
+                  "page": ""
+              },
+              {
+                  "check": "80-81",
+                  "name": "Gema elemental",
+                  "page": ""
+              },
+              {
+                  "check": "82-83",
+                  "name": "Filtro de amor",
+                  "page": ""
+              },
+              {
+                  "check": "84",
+                  "name": "Vasija alquímica",
+                  "page": ""
+              },
+              {
+                  "check": "85",
+                  "name": "Gorro de respirar debajo del agua",
+                  "page": ""
+              },
+              {
+                  "check": "86",
+                  "name": "Capa de mantarraya",
+                  "page": ""
+              },
+              {
+                  "check": "87",
+                  "name": "Globo flotante",
+                  "page": ""
+              },
+              {
+                  "check": "88",
+                  "name": "Anteojos de la noche",
+                  "page": ""
+              },
+              {
+                  "check": "89",
+                  "name": "Yelmo de entender idiomas",
+                  "page": ""
+              },
+              {
+                  "check": "90",
+                  "name": "Vara inamovible",
+                  "page": ""
+              },
+              {
+                  "check": "91",
+                  "name": "Linterna de revelación",
+                  "page": ""
+              },
+              {
+                  "check": "92",
+                  "name": "Armadura de marinero",
+                  "page": ""
+              },
+              {
+                  "check": "93",
+                  "name": "Armadura de mithral",
+                  "page": ""
+              },
+              {
+                  "check": "94",
+                  "name": "Poción de veneno",
+                  "page": ""
+              },
+              {
+                  "check": "95",
+                  "name": "Anillo de natación",
+                  "page": ""
+              },
+              {
+                  "check": "96",
+                  "name": "Túnica de objetos útiles",
+                  "page": ""
+              },
+              {
+                  "check": "97",
+                  "name": "Cuerda de escalada",
+                  "page": ""
+              },
+              {
+                  "check": "98",
+                  "name": "Silla de monta de caballero",
+                  "page": ""
+              },
+              {
+                  "check": "99",
+                  "name": "Varita de detección mágica",
+                  "page": ""
+              },
+              {
+                  "check": "100",
+                  "name": "Varita de secretos",
+                  "page": ""
+              }
+          ]
+      },
+      {
+          "table": "C",
+          "values": [
+              {
+                  "check": "1-15",
+                  "name": "Poción de curación superior",
+                  "page": ""
+              },
+              {
+                  "check": "16-22",
+                  "name": "Pergamino de conjuro (N4)",
+                  "page": ""
+              },
+              {
+                  "check": "23-27",
+                  "name": "Munición +2",
+                  "page": ""
+              },
+              {
+                  "check": "28-32",
+                  "name": "Poción de clarividencia",
+                  "page": ""
+              },
+              {
+                  "check": "33-37",
+                  "name": "Poción de encoger",
+                  "page": ""
+              },
+              {
+                  "check": "38-42",
+                  "name": "Poción de forma gaseosa",
+                  "page": ""
+              },
+              {
+                  "check": "43-47",
+                  "name": "Poción de fuerza de gigante de la escarcha",
+                  "page": ""
+              },
+              {
+                  "check": "48-52",
+                  "name": "Poción de fuerza de gigante de piedra",
+                  "page": ""
+              },
+              {
+                  "check": "53-57",
+                  "name": "Poción de heroismo",
+                  "page": ""
+              },
+              {
+                  "check": "58-62",
+                  "name": "Poción de invulnerabilidad",
+                  "page": ""
+              },
+              {
+                  "check": "63-67",
+                  "name": "Poción de leer mentes",
+                  "page": ""
+              },
+              {
+                  "check": "68-72",
+                  "name": "Pergamino de conjuro (N5)",
+                  "page": ""
+              },
+              {
+                  "check": "73-75",
+                  "name": "Elixir de salud",
+                  "page": ""
+              },
+              {
+                  "check": "76-78",
+                  "name": "Aceite de etereidad",
+                  "page": "150"
+              },
+              {
+                  "check": "79-81",
+                  "name": "Poción de fuerza de gigante de fuego",
+                  "page": ""
+              },
+              {
+                  "check": "82-84",
+                  "name": "Ficha pluma de Quall",
+                  "page": ""
+              },
+              {
+                  "check": "85-87",
+                  "name": "Pergamino de protección",
+                  "page": ""
+              },
+              {
+                  "check": "88-89",
+                  "name": "Bolsa de judías",
+                  "page": ""
+              },
+              {
+                  "check": "90-91",
+                  "name": "Canica de fuerza",
+                  "page": ""
+              },
+              {
+                  "check": "92",
+                  "name": "Carrillón de apertura",
+                  "page": ""
+              },
+              {
+                  "check": "93",
+                  "name": "Decantador de agua interminable",
+                  "page": ""
+              },
+              {
+                  "check": "94",
+                  "name": "Anteojos de visión minuciosa",
+                  "page": ""
+              },
+              {
+                  "check": "95",
+                  "name": "Bote plegable",
+                  "page": ""
+              },
+              {
+                  "check": "96",
+                  "name": "Morral práctico de Heward",
+                  "page": ""
+              },
+              {
+                  "check": "97",
+                  "name": "Herraduras de velocidad",
+                  "page": ""
+              },
+              {
+                  "check": "98",
+                  "name": "Collar de bolas de fuego",
+                  "page": ""
+              },
+              {
+                  "check": "99",
+                  "name": "Talismán de salud",
+                  "page": ""
+              },
+              {
+                  "check": "100",
+                  "name": "Piedras mensajeras",
+                  "page": ""
+              }
+          ]
+      },
+      {
+          "table": "D",
+          "values": [
+              {
+                  "check": "1-20",
+                  "name": "Poción de curación suprema",
+                  "page": ""
+              },
+              {
+                  "check": "21-30",
+                  "name": "Poción de invisibilidad",
+                  "page": ""
+              },
+              {
+                  "check": "31-40",
+                  "name": "Poción de velocidad",
+                  "page": ""
+              },
+              {
+                  "check": "41-50",
+                  "name": "Pergamino de conjuro (N6)",
+                  "page": ""
+              },
+              {
+                  "check": "51-60",
+                  "name": "Pergamino de conjuro (N7)",
+                  "page": ""
+              },
+              {
+                  "check": "58-62",
+                  "name": "Munición +3",
+                  "page": ""
+              },
+              {
+                  "check": "63-67",
+                  "name": "Aceite de afilado",
+                  "page": "150"
+              },
+              {
+                  "check": "68-72",
+                  "name": "Poción de vuelo",
+                  "page": ""
+              },
+              {
+                  "check": "73-77",
+                  "name": "Poción de fuerza de gigante de las nubes",
+                  "page": ""
+              },
+              {
+                  "check": "78-82",
+                  "name": "Poción de longevidad",
+                  "page": ""
+              },
+              {
+                  "check": "83-87",
+                  "name": "Poción de vitalidad",
+                  "page": ""
+              },
+              {
+                  "check": "88-92",
+                  "name": "Pergamino de conjuro (N8)",
+                  "page": ""
+              },
+              {
+                  "check": "93-95",
+                  "name": "Herraduras de céfiro",
+                  "page": ""
+              },
+              {
+                  "check": "96-98",
+                  "name": "Maravillosos pigmentos de Nolzur",
+                  "page": ""
+              },
+              {
+                  "check": "99",
+                  "name": "Bolsa devoradora",
+                  "page": ""
+              },
+              {
+                  "check": "100",
+                  "name": "Agujero portátil",
+                  "page": "150"
+              }
+          ]
+      },
+      {
+          "table": "E",
+          "values": [
+              {
+                  "check": "1-30",
+                  "name": "Pergamino de conjuro (N8)",
+                  "page": ""
+              },
+              {
+                  "check": "31-55",
+                  "name": "Poción de fierza de gigante de las tormentas",
+                  "page": ""
+              },
+              {
+                  "check": "56-70",
+                  "name": "Poción de curación suprema",
+                  "page": ""
+              },
+              {
+                  "check": "71-85",
+                  "name": "Pergamino de conjuro (N9)",
+                  "page": ""
+              },
+              {
+                  "check": "86-93",
+                  "name": "Disolvente universal",
+                  "page": ""
+              },
+              {
+                  "check": "94-98",
+                  "name": "Flecha asesina",
+                  "page": ""
+              },
+              {
+                  "check": "99-100",
+                  "name": "Pegamento soberano",
+                  "page": ""
+              }
+          ]
+      },
+      {
+          "table": "F",
+          "values": [
+              {
+                  "check": "1-15",
+                  "name": "Arma +1",
+                  "page": ""
+              },
+              {
+                  "check": "16-18",
+                  "name": "Escudo +1",
+                  "page": ""
+              },
+              {
+                  "check": "19-21",
+                  "name": "Escudo centinela",
+                  "page": ""
+              },
+              {
+                  "check": "22-23",
+                  "name": "Amuleto a prueba de detección y localización",
+                  "page": "151"
+              },
+              {
+                  "check": "24-25",
+                  "name": "Botas élficas",
+                  "page": ""
+              },
+              {
+                  "check": "26-27",
+                  "name": "Botas de zancadas y brincos",
+                  "page": ""
+              },
+              {
+                  "check": "28-29",
+                  "name": "Brazales de arquería",
+                  "page": ""
+              },
+              {
+                  "check": "30-31",
+                  "name": "Broche escudo",
+                  "page": ""
+              },
+              {
+                  "check": "32-33",
+                  "name": "Escoba voladora",
+                  "page": ""
+              },
+              {
+                  "check": "34-35",
+                  "name": "Capa élfica",
+                  "page": ""
+              },
+              {
+                  "check": "36-37",
+                  "name": "Capa de protección",
+                  "page": ""
+              },
+              {
+                  "check": "38-39",
+                  "name": "Guanteletes de fuerza de ogro",
+                  "page": ""
+              },
+              {
+                  "check": "40-41",
+                  "name": "Sombrero de disfraz",
+                  "page": ""
+              },
+              {
+                  "check": "42-43",
+                  "name": "Jabalina del relámpago",
+                  "page": ""
+              },
+              {
+                  "check": "44-45",
+                  "name": "Perla de poder",
+                  "page": ""
+              },
+              {
+                  "check": "46-47",
+                  "name": "Vara de pacto +1",
+                  "page": ""
+              },
+              {
+                  "check": "48-49",
+                  "name": "Babuchas de trepar cual arácnido",
+                  "page": ""
+              },
+              {
+                  "check": "50-51",
+                  "name": "Bastón de la víbora",
+                  "page": ""
+              },
+              {
+                  "check": "52-53",
+                  "name": "Bastón de la pitón",
+                  "page": ""
+              },
+              {
+                  "check": "54-55",
+                  "name": "Espada de la venganza",
+                  "page": ""
+              },
+              {
+                  "check": "56-57",
+                  "name": "Tridente de comandar peces",
+                  "page": ""
+              },
+              {
+                  "check": "58-59",
+                  "name": "Varita de proyectiles mágicos",
+                  "page": ""
+              },
+              {
+                  "check": "60-61",
+                  "name": "Varita de mago de guerra +1",
+                  "page": ""
+              },
+              {
+                  "check": "62-63",
+                  "name": "Varita de telaraña",
+                  "page": ""
+              },
+              {
+                  "check": "64-65",
+                  "name": "Armadura de advertencia",
+                  "page": ""
+              },
+              {
+                  "check": "66",
+                  "name": "Armadura adamantina (cota de mallas)",
+                  "page": ""
+              },
+              {
+                  "check": "67",
+                  "name": "Armadura adamantina (camisa de mallas)",
+                  "page": ""
+              },
+              {
+                  "check": "68",
+                  "name": "Armadura adamantina (cota de escamas)",
+                  "page": ""
+              },
+              {
+                  "check": "69",
+                  "name": "Bolsa de trucos (gris)",
+                  "page": ""
+              },
+              {
+                  "check": "70",
+                  "name": "Bolsa de trucos (rojiza)",
+                  "page": ""
+              },
+              {
+                  "check": "71",
+                  "name": "Bolsa de trucos (marrón)",
+                  "page": ""
+              },
+              {
+                  "check": "72",
+                  "name": "Botas de las tierras invernales",
+                  "page": ""
+              },
+              {
+                  "check": "73",
+                  "name": "Diadema de estallidos",
+                  "page": ""
+              },
+              {
+                  "check": "74",
+                  "name": "Baraja de ilusiones",
+                  "page": ""
+              },
+              {
+                  "check": "75",
+                  "name": "Botella siemprehumeante",
+                  "page": ""
+              },
+              {
+                  "check": "76",
+                  "name": "Anteojos de encantamiento",
+                  "page": ""
+              },
+              {
+                  "check": "77",
+                  "name": "Anteojos de vista de águila",
+                  "page": ""
+              },
+              {
+                  "check": "78",
+                  "name": "Estatuilla de poder maravilloso (cuervo de plata)",
+                  "page": ""
+              },
+              {
+                  "check": "79",
+                  "name": "Gema del resplandor",
+                  "page": ""
+              },
+              {
+                  "check": "80",
+                  "name": "Guantes atrapaflechas",
+                  "page": ""
+              },
+              {
+                  "check": "81",
+                  "name": "Guantes de natación y escalada",
+                  "page": ""
+              },
+              {
+                  "check": "82",
+                  "name": "Guantes de ladrón",
+                  "page": ""
+              },
+              {
+                  "check": "83",
+                  "name": "Guantes de intelecto",
+                  "page": ""
+              },
+              {
+                  "check": "84",
+                  "name": "Yelmo de telepatía",
+                  "page": ""
+              },
+              {
+                  "check": "85",
+                  "name": "Instrumento de los bardos (laúd de Doss)",
+                  "page": ""
+              },
+              {
+                  "check": "86",
+                  "name": "Instrumento de los bardos (bandora de Fochlucan)",
+                  "page": ""
+              },
+              {
+                  "check": "87",
+                  "name": "Instrumento de los bardos (cistro de Mac-Fuirmidh)",
+                  "page": ""
+              },
+              {
+                  "check": "88",
+                  "name": "Medallón de los pensamientos",
+                  "page": ""
+              },
+              {
+                  "check": "89",
+                  "name": "Collar de adaptación",
+                  "page": ""
+              },
+              {
+                  "check": "90",
+                  "name": "Talismán de cerrar heridas",
+                  "page": ""
+              },
+              {
+                  "check": "91",
+                  "name": "Flauta de aparición",
+                  "page": ""
+              },
+              {
+                  "check": "92",
+                  "name": "Flauta de las cloacas",
+                  "page": ""
+              },
+              {
+                  "check": "93",
+                  "name": "Anillo de salto",
+                  "page": ""
+              },
+              {
+                  "check": "94",
+                  "name": "Anillo de escudo mental",
+                  "page": "153"
+              },
+              {
+                  "check": "95",
+                  "name": "Anillo de calidez",
+                  "page": "152"
+              },
+              {
+                  "check": "96",
+                  "name": "Anillo de caminar sobre las aguas",
+                  "page": "152"
+              },
+              {
+                  "check": "97",
+                  "name": "Carcaj de Ehlonna",
+                  "page": ""
+              },
+              {
+                  "check": "98",
+                  "name": "Piedra de la buena fortuna",
+                  "page": ""
+              },
+              {
+                  "check": "99",
+                  "name": "Abanico del viento",
+                  "page": "150"
+              },
+              {
+                  "check": "100",
+                  "name": "Botas aladas",
+                  "page": ""
+              }
+          ]
+      },
+      {
+          "table": "G",
+          "values": [
+              {
+                  "check": "1-11",
+                  "name": "Arma +2",
+                  "page": ""
+              },
+              {
+                  "check": "12-14",
+                  "name": "Estatuilla de poder maravilloso",
+                  "page": ""
+              },
+              {
+                  "check": "15",
+                  "name": "Armadura adamantina (coraza)",
+                  "page": ""
+              },
+              {
+                  "check": "16",
+                  "name": "Armadura adamantina (de bandas)",
+                  "page": ""
+              },
+              {
+                  "check": "17",
+                  "name": "Amuleto de salud",
+                  "page": "151"
+              },
+              {
+                  "check": "18",
+                  "name": "Armadura de vulnerabilidad",
+                  "page": ""
+              },
+              {
+                  "check": "19",
+                  "name": "Escudo atrapaflechas",
+                  "page": ""
+              },
+              {
+                  "check": "20",
+                  "name": "Cinturón enano",
+                  "page": ""
+              },
+              {
+                  "check": "21",
+                  "name": "Cinturón de fuerza de gigante de las colinas",
+                  "page": ""
+              },
+              {
+                  "check": "22",
+                  "name": "Hacha berserker",
+                  "page": ""
+              },
+              {
+                  "check": "23",
+                  "name": "Botas de levitación",
+                  "page": ""
+              },
+              {
+                  "check": "24",
+                  "name": "Botas de velocidad",
+                  "page": ""
+              },
+              {
+                  "check": "25",
+                  "name": "Cuenco para controlar elementales de agua",
+                  "page": ""
+              },
+              {
+                  "check": "26",
+                  "name": "Brazales de defensa",
+                  "page": ""
+              },
+              {
+                  "check": "27",
+                  "name": "Brasero para controlar elementales de fuego",
+                  "page": ""
+              },
+              {
+                  "check": "28",
+                  "name": "Capa del charlatán",
+                  "page": ""
+              },
+              {
+                  "check": "29",
+                  "name": "Incensario de controlar elementales de aire",
+                  "page": ""
+              },
+              {
+                  "check": "30",
+                  "name": "Armadura, cota de malla +1",
+                  "page": ""
+              },
+              {
+                  "check": "31",
+                  "name": "Armadura de resistencia, cota de malla",
+                  "page": ""
+              },
+              {
+                  "check": "32",
+                  "name": "Armadura, camisa de malla +1",
+                  "page": ""
+              },
+              {
+                  "check": "33",
+                  "name": "Armadura de resistencia, camisa de malla",
+                  "page": ""
+              },
+              {
+                  "check": "34",
+                  "name": "Capa de desplazamiento",
+                  "page": ""
+              },
+              {
+                  "check": "35",
+                  "name": "Capa de murciélago",
+                  "page": ""
+              },
+              {
+                  "check": "36",
+                  "name": "Cubo de fuerza",
+                  "page": ""
+              },
+              {
+                  "check": "37",
+                  "name": "Fortaleza instantánea de Daern",
+                  "page": ""
+              },
+              {
+                  "check": "38",
+                  "name": "Daga de la ponzoña",
+                  "page": ""
+              },
+              {
+                  "check": "39",
+                  "name": "Grilletes dimensionales",
+                  "page": ""
+              },
+              {
+                  "check": "40",
+                  "name": "Matadragones",
+                  "page": ""
+              },
+              {
+                  "check": "41",
+                  "name": "Malla élfica",
+                  "page": ""
+              },
+              {
+                  "check": "42",
+                  "name": "Lengua de fuego",
+                  "page": ""
+              },
+              {
+                  "check": "43",
+                  "name": "Gema de visión",
+                  "page": ""
+              },
+              {
+                  "check": "44",
+                  "name": "Matagigantes",
+                  "page": ""
+              },
+              {
+                  "check": "45",
+                  "name": "Cuero tachonado encantado",
+                  "page": ""
+              },
+              {
+                  "check": "46",
+                  "name": "Yelmo de teletransporte",
+                  "page": ""
+              },
+              {
+                  "check": "47",
+                  "name": "Cuerno de estallido",
+                  "page": ""
+              },
+              {
+                  "check": "48",
+                  "name": "Cuerno del Valhalla",
+                  "page": ""
+              },
+              {
+                  "check": "49",
+                  "name": "Instrumento de los bardos (mandolina de Canaith)",
+                  "page": ""
+              },
+              {
+                  "check": "50",
+                  "name": "Instrumento de los bardos (lira de Cli)",
+                  "page": ""
+              },
+              {
+                  "check": "51",
+                  "name": "Piedra de Ioun (consciencia)",
+                  "page": ""
+              },
+              {
+                  "check": "52",
+                  "name": "Piedra de Ioun (protección)",
+                  "page": ""
+              },
+              {
+                  "check": "53",
+                  "name": "Piedra de Ioun (reserva)",
+                  "page": ""
+              },
+              {
+                  "check": "54",
+                  "name": "Piedra de Ioun (sustento)",
+                  "page": ""
+              },
+              {
+                  "check": "55",
+                  "name": "Bandas de hierro de Bilarro",
+                  "page": ""
+              },
+              {
+                  "check": "56",
+                  "name": "Armadura, cuero +1",
+                  "page": ""
+              },
+              {
+                  "check": "57",
+                  "name": "Armadura de resistencia, cuero",
+                  "page": ""
+              },
+              {
+                  "check": "58",
+                  "name": "Maza disruptiva",
+                  "page": ""
+              },
+              {
+                  "check": "59",
+                  "name": "Maza castigadora",
+                  "page": ""
+              },
+              {
+                  "check": "60",
+                  "name": "Maza del terror",
+                  "page": ""
+              },
+              {
+                  "check": "61",
+                  "name": "Manto de resistencia a conjuros",
+                  "page": ""
+              },
+              {
+                  "check": "62",
+                  "name": "Collar de plegarias",
+                  "page": ""
+              },
+              {
+                  "check": "63",
+                  "name": "Colgante de inmunidad al veneno",
+                  "page": ""
+              },
+              {
+                  "check": "64",
+                  "name": "Anillo de influencia animal",
+                  "page": ""
+              },
+              {
+                  "check": "65",
+                  "name": "Anillo de evasión",
+                  "page": ""
+              },
+              {
+                  "check": "66",
+                  "name": "Anillo de caída de pluma",
+                  "page": "152"
+              },
+              {
+                  "check": "67",
+                  "name": "Anillo de libertad de acción",
+                  "page": ""
+              },
+              {
+                  "check": "68",
+                  "name": "Anillo de protección",
+                  "page": ""
+              },
+              {
+                  "check": "69",
+                  "name": "Anillo de resistencia",
+                  "page": ""
+              },
+              {
+                  "check": "70",
+                  "name": "Anillo de almacenamiento de conjuros",
+                  "page": "152"
+              },
+              {
+                  "check": "71",
+                  "name": "Anillo de carnero",
+                  "page": ""
+              },
+              {
+                  "check": "72",
+                  "name": "Anillo de visión de rayos X",
+                  "page": ""
+              },
+              {
+                  "check": "73",
+                  "name": "Túnica de los ojos",
+                  "page": ""
+              },
+              {
+                  "check": "74",
+                  "name": "Cetro de mando",
+                  "page": ""
+              },
+              {
+                  "check": "75",
+                  "name": "Vara de pacto +2",
+                  "page": ""
+              },
+              {
+                  "check": "76",
+                  "name": "Cuerda enredadora",
+                  "page": ""
+              },
+              {
+                  "check": "77",
+                  "name": "Amadura, cota de escamas +1",
+                  "page": ""
+              },
+              {
+                  "check": "78",
+                  "name": "Armadura de resistencia, cota de escamas",
+                  "page": ""
+              },
+              {
+                  "check": "79",
+                  "name": "Escudo +2",
+                  "page": ""
+              },
+              {
+                  "check": "80",
+                  "name": "Escudo de atraer proyectiles",
+                  "page": ""
+              },
+              {
+                  "check": "81",
+                  "name": "Bastón del cautivador",
+                  "page": ""
+              },
+              {
+                  "check": "82",
+                  "name": "Bastón de curación",
+                  "page": ""
+              },
+              {
+                  "check": "83",
+                  "name": "Bastón de enjambre de insectos",
+                  "page": ""
+              },
+              {
+                  "check": "84",
+                  "name": "Bastón de los bosques",
+                  "page": ""
+              },
+              {
+                  "check": "85",
+                  "name": "Bastón de marchitamiento",
+                  "page": ""
+              },
+              {
+                  "check": "86",
+                  "name": "Piedra de controlar elementales de tierra",
+                  "page": ""
+              },
+              {
+                  "check": "87",
+                  "name": "Espada solar",
+                  "page": ""
+              },
+              {
+                  "check": "88",
+                  "name": "Espada ladrona de vida",
+                  "page": ""
+              },
+              {
+                  "check": "89",
+                  "name": "Espada hiriente",
+                  "page": ""
+              },
+              {
+                  "check": "90",
+                  "name": "Vara de tentáculos",
+                  "page": ""
+              },
+              {
+                  "check": "91",
+                  "name": "Arma feroz",
+                  "page": ""
+              },
+              {
+                  "check": "92",
+                  "name": "Varita de atadura",
+                  "page": ""
+              },
+              {
+                  "check": "93",
+                  "name": "Varita de detectar enemigos",
+                  "page": ""
+              },
+              {
+                  "check": "94",
+                  "name": "Varita del terror",
+                  "page": ""
+              },
+              {
+                  "check": "95",
+                  "name": "Varita de bolas de fuego",
+                  "page": ""
+              },
+              {
+                  "check": "96",
+                  "name": "Varita de relámpagos",
+                  "page": ""
+              },
+              {
+                  "check": "97",
+                  "name": "Varita de parálisis",
+                  "page": ""
+              },
+              {
+                  "check": "98",
+                  "name": "Varita del mago de guerra +2",
+                  "page": ""
+              },
+              {
+                  "check": "99",
+                  "name": "Varita de las maravillas",
+                  "page": ""
+              },
+              {
+                  "check": "100",
+                  "name": "Alas de vuelo",
+                  "page": "151"
+              }
+          ]
+      },
+      {
+          "table": "H",
+          "values": [
+              {
+                  "check": "1-10",
+                  "name": "Arma +3",
+                  "page": ""
+              },
+              {
+                  "check": "11-12",
+                  "name": "Amuleto de los planos",
+                  "page": "151"
+              },
+              {
+                  "check": "13-14",
+                  "name": "Alfombra voladora",
+                  "page": "151"
+              },
+              {
+                  "check": "15-16",
+                  "name": "Bola de cristal (versión muy rara)",
+                  "page": ""
+              },
+              {
+                  "check": "17-18",
+                  "name": "Anillo de regeneración",
+                  "page": ""
+              },
+              {
+                  "check": "19-20",
+                  "name": "Anillo de estrellas fugaces",
+                  "page": "153"
+              },
+              {
+                  "check": "21-22",
+                  "name": "Anillo de telequinesis",
+                  "page": ""
+              },
+              {
+                  "check": "23-24",
+                  "name": "Túnica de colores hipnóticos",
+                  "page": ""
+              },
+              {
+                  "check": "25-26",
+                  "name": "Túnica de las estrellas",
+                  "page": ""
+              },
+              {
+                  "check": "27-28",
+                  "name": "Vara de la absorción",
+                  "page": ""
+              },
+              {
+                  "check": "29-30",
+                  "name": "Vara de la alerta",
+                  "page": ""
+              },
+              {
+                  "check": "31-32",
+                  "name": "Vara de la seguridad",
+                  "page": ""
+              },
+              {
+                  "check": "33-34",
+                  "name": "Vara del pacto +3",
+                  "page": ""
+              },
+              {
+                  "check": "35-36",
+                  "name": "Cimitarra de velocidad",
+                  "page": ""
+              },
+              {
+                  "check": "37-38",
+                  "name": "Escudo +3",
+                  "page": ""
+              },
+              {
+                  "check": "39-40",
+                  "name": "Bastón de fuego",
+                  "page": ""
+              },
+              {
+                  "check": "41-42",
+                  "name": "Bastón de escarch",
+                  "page": ""
+              },
+              {
+                  "check": "43-44",
+                  "name": "Bastón de poder",
+                  "page": ""
+              },
+              {
+                  "check": "45-46",
+                  "name": "Bastón de impacto",
+                  "page": ""
+              },
+              {
+                  "check": "47-48",
+                  "name": "Bastón de truenos y relámpagos",
+                  "page": ""
+              },
+              {
+                  "check": "49-50",
+                  "name": "Espada de hoja afilada",
+                  "page": ""
+              },
+              {
+                  "check": "51-52",
+                  "name": "Varita de polimorfar",
+                  "page": ""
+              },
+              {
+                  "check": "53-54",
+                  "name": "varita del mago de guerra +3",
+                  "page": ""
+              },
+              {
+                  "check": "55",
+                  "name": "Armadura adamantina (media armadura)",
+                  "page": ""
+              },
+              {
+                  "check": "56",
+                  "name": "Armadura adamantina (de placas)",
+                  "page": ""
+              },
+              {
+                  "check": "57",
+                  "name": "Escudo animado",
+                  "page": ""
+              },
+              {
+                  "check": "58",
+                  "name": "Cinturón de fuerza de gigante de fuego",
+                  "page": ""
+              },
+              {
+                  "check": "59",
+                  "name": "Cinturón de fuerza de gigante de escarcha (o piedra)",
+                  "page": ""
+              },
+              {
+                  "check": "60",
+                  "name": "Armadura, coraza +1",
+                  "page": ""
+              },
+              {
+                  "check": "61",
+                  "name": "Armadura de resistencia, coraza",
+                  "page": ""
+              },
+              {
+                  "check": "62",
+                  "name": "Vela de invocación",
+                  "page": ""
+              },
+              {
+                  "check": "63",
+                  "name": "Armadura, cota de malla +2",
+                  "page": ""
+              },
+              {
+                  "check": "64",
+                  "name": "Armadura, camisa de malla +2",
+                  "page": ""
+              },
+              {
+                  "check": "65",
+                  "name": "Capa arácnida",
+                  "page": ""
+              },
+              {
+                  "check": "66",
+                  "name": "Espada danzarina",
+                  "page": ""
+              },
+              {
+                  "check": "67",
+                  "name": "Armadura demoníaca",
+                  "page": ""
+              },
+              {
+                  "check": "68",
+                  "name": "Cota de escamas de dragón",
+                  "page": ""
+              },
+              {
+                  "check": "69",
+                  "name": "Armadura de placas enana",
+                  "page": ""
+              },
+              {
+                  "check": "70",
+                  "name": "Martillo arrojadizo enano",
+                  "page": ""
+              },
+              {
+                  "check": "71",
+                  "name": "Botella de ifrit",
+                  "page": ""
+              },
+              {
+                  "check": "72",
+                  "name": "Estatuilla de poder maravilloso (corcel de obsidiana)",
+                  "page": ""
+              },
+              {
+                  "check": "73",
+                  "name": "Hierro de escarcha",
+                  "page": ""
+              },
+              {
+                  "check": "74",
+                  "name": "Yelmo de fulgor",
+                  "page": ""
+              },
+              {
+                  "check": "75",
+                  "name": "Cuerno del Valhalla (bronce)",
+                  "page": ""
+              },
+              {
+                  "check": "76",
+                  "name": "Instrumento de los bardos (arpa de Anstruth)",
+                  "page": ""
+              },
+              {
+                  "check": "77",
+                  "name": "Piedra Ioun (absorción)",
+                  "page": ""
+              },
+              {
+                  "check": "78",
+                  "name": "Piedra Ioun (agilidad)",
+                  "page": ""
+              },
+              {
+                  "check": "79",
+                  "name": "Piedra Ioun (fortaleza)",
+                  "page": ""
+              },
+              {
+                  "check": "80",
+                  "name": "Piedra Ioun (perspicacia)",
+                  "page": ""
+              },
+              {
+                  "check": "81",
+                  "name": "Piedra Ioun (intelecto)",
+                  "page": ""
+              },
+              {
+                  "check": "82",
+                  "name": "Piedra Ioun (liderazgo)",
+                  "page": ""
+              },
+              {
+                  "check": "83",
+                  "name": "Piedra Ioun (fuerza)",
+                  "page": ""
+              },
+              {
+                  "check": "84",
+                  "name": "Amadura, cuero +2",
+                  "page": ""
+              },
+              {
+                  "check": "85",
+                  "name": "Manual de la salud corporal",
+                  "page": ""
+              },
+              {
+                  "check": "86",
+                  "name": "Manual del ejercicio beneficioso",
+                  "page": ""
+              },
+              {
+                  "check": "87",
+                  "name": "Manual de gólems",
+                  "page": ""
+              },
+              {
+                  "check": "88",
+                  "name": "Manual de rapidez de acción",
+                  "page": ""
+              },
+              {
+                  "check": "89",
+                  "name": "Espejo atrapavidas",
+                  "page": ""
+              },
+              {
+                  "check": "90",
+                  "name": "Ladrona de nueve vidas",
+                  "page": ""
+              },
+              {
+                  "check": "91",
+                  "name": "Arco juramentado",
+                  "page": ""
+              },
+              {
+                  "check": "92",
+                  "name": "Armadura, cota de escamas +2",
+                  "page": ""
+              },
+              {
+                  "check": "93",
+                  "name": "Escudo de guarda contra conjuros",
+                  "page": ""
+              },
+              {
+                  "check": "94",
+                  "name": "Armadura, de bandas +1",
+                  "page": ""
+              },
+              {
+                  "check": "95",
+                  "name": "Armadura de resistencia, de bandas",
+                  "page": ""
+              },
+              {
+                  "check": "96",
+                  "name": "Amadura, cuero tachonado +1",
+                  "page": ""
+              },
+              {
+                  "check": "97",
+                  "name": "Armadura de resistencia, cuero tachonado",
+                  "page": ""
+              },
+              {
+                  "check": "98",
+                  "name": "Tomo de pensamiento claro",
+                  "page": ""
+              },
+              {
+                  "check": "99",
+                  "name": "Tomo de liderazgo e influencia",
+                  "page": ""
+              },
+              {
+                  "check": "100",
+                  "name": "Tomo de entendimiento",
+                  "page": ""
+              }
+          ]
+      },
+      {
+          "table": "I",
+          "values": [
+              {
+                  "check": "1-5",
+                  "name": "Defensora",
+                  "page": ""
+              },
+              {
+                  "check": "6-10",
+                  "name": "Martillo de rayos",
+                  "page": ""
+              },
+              {
+                  "check": "11-15",
+                  "name": "Filo de la fortuna",
+                  "page": ""
+              },
+              {
+                  "check": "16-20",
+                  "name": "Espada de la respuesta",
+                  "page": ""
+              },
+              {
+                  "check": "21-23",
+                  "name": "Vengadora sagrada",
+                  "page": ""
+              },
+              {
+                  "check": "24-26",
+                  "name": "Anillo de invocar djinns",
+                  "page": ""
+              },
+              {
+                  "check": "27-29",
+                  "name": "Anillo de invisibilidad",
+                  "page": ""
+              },
+              {
+                  "check": "30-32",
+                  "name": "Anillo de retorno de conjuros",
+                  "page": ""
+              },
+              {
+                  "check": "33-35",
+                  "name": "Cetro de poder señorial",
+                  "page": ""
+              },
+              {
+                  "check": "36-38",
+                  "name": "Bastón de los magos",
+                  "page": ""
+              },
+              {
+                  "check": "39-41",
+                  "name": "Espada vorpal",
+                  "page": ""
+              },
+              {
+                  "check": "42-43",
+                  "name": "Cinturón de fuerza de gigante de las nubes",
+                  "page": ""
+              },
+              {
+                  "check": "44-45",
+                  "name": "Armadura, coraza +2",
+                  "page": ""
+              },
+              {
+                  "check": "46-47",
+                  "name": "Armadura, cota de malla +3",
+                  "page": ""
+              },
+              {
+                  "check": "48-49",
+                  "name": "Armadura, camisa de malla +3",
+                  "page": ""
+              },
+              {
+                  "check": "50-51",
+                  "name": "Capa de invisibilidad",
+                  "page": ""
+              },
+              {
+                  "check": "52-53",
+                  "name": "Bola de cristal (versión legendaria)",
+                  "page": ""
+              },
+              {
+                  "check": "54-55",
+                  "name": "Armadura, media armadura +1",
+                  "page": ""
+              },
+              {
+                  "check": "56-57",
+                  "name": "Frasco de hierro",
+                  "page": ""
+              },
+              {
+                  "check": "58-59",
+                  "name": "Armadura, cuero +3",
+                  "page": ""
+              },
+              {
+                  "check": "60-61",
+                  "name": "Armadura, de placas +1",
+                  "page": ""
+              },
+              {
+                  "check": "62-63",
+                  "name": "Túnica de archimago",
+                  "page": ""
+              },
+              {
+                  "check": "64-65",
+                  "name": "Vara de la resurrección",
+                  "page": ""
+              },
+              {
+                  "check": "66-67",
+                  "name": "Armadura, cota de escamas +1",
+                  "page": ""
+              },
+              {
+                  "check": "68-69",
+                  "name": "Escarabajo protector",
+                  "page": ""
+              },
+              {
+                  "check": "70-71",
+                  "name": "Armadura, de bandas +2",
+                  "page": ""
+              },
+              {
+                  "check": "72-73",
+                  "name": "Armadura, cuero +2",
+                  "page": ""
+              },
+              {
+                  "check": "74-75",
+                  "name": "Pozo de los muchos mundos",
+                  "page": ""
+              },
+              {
+                  "check": "76",
+                  "name": "Armadura mágica",
+                  "subtype": [
+                      {
+                          "check": "1-2",
+                          "name": "media armadura +2",
+                          "page": ""
+                      },
+                      {
+                          "check": "3-4",
+                          "name": "placas +2",
+                          "page": ""
+                      },
+                      {
+                          "check": "5-6",
+                          "name": "cuero tachonado +3",
+                          "page": ""
+                      },
+                      {
+                          "check": "7-8",
+                          "name": "coraza +3",
+                          "page": ""
+                      },
+                      {
+                          "check": "9-10",
+                          "name": "de bandas +3",
+                          "page": ""
+                      },
+                      {
+                          "check": "11",
+                          "name": "media armadura +3",
+                          "page": ""
+                      },
+                      {
+                          "check": "12",
+                          "name": "de placas +3",
+                          "page": ""
+                      }
+                  ],
+                  "page": ""
+              },
+              {
+                  "check": "77",
+                  "name": "Aparato de Kwalish",
+                  "page": ""
+              },
+              {
+                  "check": "78",
+                  "name": "Armadura de invulnerabilidad",
+                  "page": ""
+              },
+              {
+                  "check": "79",
+                  "name": "Cinturón de fuerza de gigante de las tormentas",
+                  "page": ""
+              },
+              {
+                  "check": "80",
+                  "name": "Portal cúbico",
+                  "page": ""
+              },
+              {
+                  "check": "81",
+                  "name": "Baraja de múltiples cosas",
+                  "page": ""
+              },
+              {
+                  "check": "82",
+                  "name": "Malla de ifrit",
+                  "page": ""
+              },
+              {
+                  "check": "83",
+                  "name": "Armadura de resistencia, media armadura",
+                  "page": ""
+              },
+              {
+                  "check": "84",
+                  "name": "Cuerno de Valhalla (hierro)",
+                  "page": ""
+              },
+              {
+                  "check": "85",
+                  "name": "Instrumento de los bardos (arpa de Ollamh)",
+                  "page": ""
+              },
+              {
+                  "check": "86",
+                  "name": "Piedra Ioun (absorción)",
+                  "page": ""
+              },
+              {
+                  "check": "87",
+                  "name": "Piedra Ioun (maestría)",
+                  "page": ""
+              },
+              {
+                  "check": "88",
+                  "name": "Piedra Ioun (regeneración)",
+                  "page": ""
+              },
+              {
+                  "check": "89",
+                  "name": "Armadura de placas de etereidad",
+                  "page": ""
+              },
+              {
+                  "check": "90",
+                  "name": "Armadura de placas de resistencia",
+                  "page": ""
+              },
+              {
+                  "check": "91",
+                  "name": "Anillo de comandar elementales de aire",
+                  "page": "152"
+              },
+              {
+                  "check": "92",
+                  "name": "Anillo de comandar elementales de tierra",
+                  "page": "152"
+              },
+              {
+                  "check": "93",
+                  "name": "Anillo de comandar elementales de fuego",
+                  "page": "152"
+              },
+              {
+                  "check": "94",
+                  "name": "Anillo de los tres deseos",
+                  "page": ""
+              },
+              {
+                  "check": "95",
+                  "name": "Anillo de comandar elementales de agua",
+                  "page": "152"
+              },
+              {
+                  "check": "96",
+                  "name": "Esfera de aniquilación",
+                  "page": ""
+              },
+              {
+                  "check": "97",
+                  "name": "Talismán del bien puro",
+                  "page": ""
+              },
+              {
+                  "check": "98",
+                  "name": "Talismán de la esfera",
+                  "page": ""
+              },
+              {
+                  "check": "99",
+                  "name": "Tailsmán del mal definitivo",
+                  "page": ""
+              },
+              {
+                  "check": "100",
+                  "name": "Tomo de la lengua detenida",
+                  "page": ""
+              }
+          ]
+      }
+  ]
+}
+
+
