@@ -241,6 +241,308 @@
                   "objects": "1d1:H"
               }
           ]
+      },
+      {
+          "challenge": "11-16",
+          "money": "4d6x1000:po;5d6x100:ppt",
+          "values": [
+              {
+                  "check": "1-3",
+                  "gems": "",
+                  "objects": ""
+              },
+              {
+                  "check": "4-6",
+                  "gems": "2d4x250:po",
+                  "objects": ""
+              },
+              {
+                  "check": "7-9",
+                  "gems": "2d4x750:po",
+                  "objects": ""
+              },
+              {
+                  "check": "10-12",
+                  "gems": "3d6x500:po",
+                  "objects": ""
+              },
+              {
+                  "check": "13-15",
+                  "gems": "3d6x1000:po",
+                  "objects": ""
+              },
+              {
+                  "check": "16-19",
+                  "gems": "2d4x250:po",
+                  "objects": "1d4:A;1d6:B"
+              },
+              {
+                  "check": "20-23",
+                  "gems": "2d4x750:po",
+                  "objects": "1d4:A;1d6:B"
+              },
+              {
+                  "check": "24-26",
+                  "gems": "3d6x500:po",
+                  "objects": "1d4:A;1d6:B"
+              },
+              {
+                  "check": "27-29",
+                  "gems": "3d6x1000:po",
+                  "objects": "1d4:A;1d6:B"
+              },
+              {
+                  "check": "30-35",
+                  "gems": "2d4x250:po",
+                  "objects": "1d6:C"
+              },
+              {
+                  "check": "36-40",
+                  "gems": "2d4x750:po",
+                  "objects": "1d6:C"
+              },
+              {
+                  "check": "41-45",
+                  "gems": "3d6x500:po",
+                  "objects": "1d6:C"
+              },
+              {
+                  "check": "46-50",
+                  "gems": "3d6x1000:po",
+                  "objects": "1d6:C"
+              },
+              {
+                  "check": "51-54",
+                  "gems": "2d4x250:po",
+                  "objects": "1d4:D"
+              },
+              {
+                  "check": "55-58",
+                  "gems": "2d4x750:po",
+                  "objects": "1d4:D"
+              },
+              {
+                  "check": "59-62",
+                  "gems": "3d6x500:po",
+                  "objects": "1d4:D"
+              },
+              {
+                  "check": "63-66",
+                  "gems": "3d6x1000:po",
+                  "objects": "1d4:D"
+              },
+              {
+                  "check": "67-68",
+                  "gems": "2d4x250:po",
+                  "objects": "1d1:E"
+              },
+              {
+                  "check": "69-70",
+                  "gems": "2d4x750:po",
+                  "objects": "1d1:E"
+              },
+              {
+                  "check": "71-72",
+                  "gems": "3d6x500:po",
+                  "objects": "1d1:E"
+              },
+              {
+                  "check": "73-74",
+                  "gems": "3d6x1000:po",
+                  "objects": "1d1:E"
+              },
+              {
+                  "check": "75-76",
+                  "gems": "2d4x250:po",
+                  "objects": "1d1:F;1D4:G"
+              },
+              {
+                  "check": "77-78",
+                  "gems": "2d4x750:po",
+                  "objects": "1d1:F;1D4:G"
+              },
+              {
+                  "check": "79-80",
+                  "gems": "3d6x500:po",
+                  "objects": "1d1:F;1D4:G"
+              },
+              {
+                  "check": "81-82",
+                  "gems": "3d6x1000:po",
+                  "objects": "1d1:F;1D4:G"
+              },
+              {
+                  "check": "83-85",
+                  "gems": "2d4x250:po",
+                  "objects": "1d4:H"
+              },
+              {
+                  "check": "86-88",
+                  "gems": "2d4x750:po",
+                  "objects": "1d4:H"
+              },
+              {
+                  "check": "89-90",
+                  "gems": "3d6x500:po",
+                  "objects": "1d4:H"
+              },
+              {
+                  "check": "91-92",
+                  "gems": "3d6x1000:po",
+                  "objects": "1d4:H"
+              },
+              {
+                  "check": "93-94",
+                  "gems": "2d4x250:po",
+                  "objects": "1d1:I"
+              },
+              {
+                  "check": "95-96",
+                  "gems": "2d4x750:po",
+                  "objects": "1d1:I"
+              },
+              {
+                  "check": "97-98",
+                  "gems": "3d6x500:po",
+                  "objects": "1d1:I"
+              },
+              {
+                  "check": "99-100",
+                  "gems": "3d6x1000:po",
+                  "objects": "1d1:I"
+              }
+          ]
+      },
+      {
+          "challenge": "17+",
+          "money": "12d6x1000:po;8d6x1000:ppt",
+          "values": [
+              {
+                  "check": "1-2",
+                  "gems": "",
+                  "objects": ""
+              },
+              {
+                  "check": "3-5",
+                  "gems": "3d6x1000:po",
+                  "objects": "1d6:C"
+              },
+              {
+                  "check": "6-8",
+                  "gems": "1d10x2500:po",
+                  "objects": "1d8:C"
+              },
+              {
+                  "check": "9-11",
+                  "gems": "1d4x7500:po",
+                  "objects": "1d8:C"
+              },
+              {
+                  "check": "12-14",
+                  "gems": "1d8x5000:po",
+                  "objects": "1d8:C"
+              },
+              {
+                  "check": "15-22",
+                  "gems": "3d6x1000:po",
+                  "objects": "1d6:D"
+              },
+              {
+                  "check": "23-30",
+                  "gems": "1d10x2500:po",
+                  "objects": "1d6:D"
+              },
+              {
+                  "check": "31-38",
+                  "gems": "1d4x7500:po",
+                  "objects": "1d6:D"
+              },
+              {
+                  "check": "39-46",
+                  "gems": "1d8x5000:po",
+                  "objects": "1d6:D"
+              },
+              {
+                  "check": "47-52",
+                  "gems": "3d6x1000:po",
+                  "objects": "1d6:E"
+              },
+              {
+                  "check": "53-58",
+                  "gems": "1d10x2500:po",
+                  "objects": "1d6:E"
+              },
+              {
+                  "check": "59-63",
+                  "gems": "1d4x7500:po",
+                  "objects": "1d6:E"
+              },
+              {
+                  "check": "64-68",
+                  "gems": "1d8x5000:po",
+                  "objects": "1d6:E"
+              },
+              {
+                  "check": "69",
+                  "gems": "3d6x1000:po",
+                  "objects": "1d4:G"
+              },
+              {
+                  "check": "70",
+                  "gems": "1d10x2500:po",
+                  "objects": "1d4:G"
+              },
+              {
+                  "check": "71",
+                  "gems": "1d4x7500:po",
+                  "objects": "1d4:G"
+              },
+              {
+                  "check": "72",
+                  "gems": "1d8x5000:po",
+                  "objects": "1d4:G"
+              },
+              {
+                  "check": "73-74",
+                  "gems": "3d6x1000:po",
+                  "objects": "1d4:H"
+              },
+              {
+                  "check": "75-76",
+                  "gems": "1d10x2500:po",
+                  "objects": "1d4:H"
+              },
+              {
+                  "check": "77-78",
+                  "gems": "1d4x7500:po",
+                  "objects": "1d4:H"
+              },
+              {
+                  "check": "79-80",
+                  "gems": "1d8x5000:po",
+                  "objects": "1d4:H"
+              },
+              {
+                  "check": "81-85",
+                  "gems": "3d6x1000:po",
+                  "objects": "1d4:I"
+              },
+              {
+                  "check": "86-90",
+                  "gems": "1d10x2500:po",
+                  "objects": "1d4:I"
+              },
+              {
+                  "check": "91-95",
+                  "gems": "1d4x7500:po",
+                  "objects": "1d4:I"
+              },
+              {
+                  "check": "96-100",
+                  "gems": "1d8x5000:po",
+                  "objects": "1d4:I"
+              }
+          ]
       }
   ]
 }
