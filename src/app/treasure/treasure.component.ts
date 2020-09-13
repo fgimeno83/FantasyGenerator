@@ -5,7 +5,8 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-treasure',
-  templateUrl: './treasure.component.html'
+  templateUrl: './treasure.component.html',
+  styleUrls: ['./treasure.component.css']
 })
 export class TreasureComponent implements OnInit {
 
