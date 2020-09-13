@@ -20,6 +20,7 @@ export class CheckService {
   private MAX_CHECK_VALUE: number;
   private DICE_SEPARATOR: string;
   private ITEM_SEPARATOR: string;
+  private MULTIPLE_ITEM_SEPARATOR: string;
 
   constructor() {
     this.personalTreasure = personalTreasureJson;
@@ -29,6 +30,7 @@ export class CheckService {
     this.MAX_CHECK_VALUE = 100;
     this.MIN_CHECK_VALUE = 1;
     this.DICE_SEPARATOR = 'd';
+    this.MULTIPLE_ITEM_SEPARATOR = ';';
   }
 
   public checkPersonalTreasure(challenge: string) {
@@ -49,15 +51,19 @@ export class CheckService {
   }
 
   public checkMagicItem(check: string) {
-    const checkValues = check.split(this.ITEM_SEPARATOR);
-    const itemValues = magicItemsJson.item.find(item => item.table === checkValues[1]);
-    const numberOfChecksResult = this.randomCheckFromString(checkValues[0]);
-
+    const multipleValues = check.split(this.MULTIPLE_ITEM_SEPARATOR);
     const itemList = [];
-    for (let index = 0; index < numberOfChecksResult; index++) {
-      const randomCheckResult = this.randomCheck(this.MIN_CHECK_VALUE, this.MAX_CHECK_VALUE);
-      itemList.push(itemValues.values.find(value => this.isNumberInRange(randomCheckResult, value.check)));
-    }
+
+    multipleValues.forEach(simpleValue => {
+      const checkValues = simpleValue.split(this.ITEM_SEPARATOR);
+      const itemValues = magicItemsJson.item.find(item => item.table === checkValues[1]);
+      const numberOfChecksResult = this.randomCheckFromString(checkValues[0]);
+
+      for (let index = 0; index < numberOfChecksResult; index++) {
+        const randomCheckResult = this.randomCheck(this.MIN_CHECK_VALUE, this.MAX_CHECK_VALUE);
+        itemList.push(itemValues.values.find(value => this.isNumberInRange(randomCheckResult, value.check)));
+      }
+    });
 
     return itemList;
   }
